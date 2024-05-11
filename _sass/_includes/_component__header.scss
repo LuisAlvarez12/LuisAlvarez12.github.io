@@ -34,7 +34,7 @@
     }
 
     &:hover {
-      color: $accent-color;
+      color: $accent-color;margin-top
     }
   }
 
@@ -163,6 +163,11 @@
   top: 0px;
 }
 
+.hor_margin {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 .menu__list {
   list-style: none;
   display: flex;
@@ -186,6 +191,10 @@
       color: $accent-color;
     }
   }
+
+  .centered-text {
+    text-align: center;
+}
 
   .menu__cta__link {
     color: $accent-color;
