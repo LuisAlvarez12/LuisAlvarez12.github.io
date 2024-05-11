@@ -1,4 +1,7 @@
-## Cabinit - Privacy Policy
+---
+title: Privacy Policy
+subtitle: 
+---
 
 ## Our stance on Privacy
 

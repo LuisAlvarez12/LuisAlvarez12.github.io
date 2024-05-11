@@ -1,10 +1,12 @@
-## Uncover - Privacy Policy
+---
+title: Privacy Policy
+subtitle: 
+---
 
 ### Our stance on Privacy
 
 Uncover, from the ground up, was created with privacy in mind, so we absolutely don’t care about collecting your personal data, and do not collect any personal data. We want to ensure that Uncover has your full trust, so we will go into specifics about what we use and collect.
 
-### Privacy Policy for Uncover Reader - Last Updated: September 9, 2023
 
 ### 1. Introduction
 
@@ -49,3 +51,5 @@ We may update this Privacy Policy from time to time, and any changes will be pos
 ### 7. Contact Us
 
 If you have any questions or concerns regarding this Privacy Policy or our data practices, please contact us at [team@rezonating.app](mailto:team@rezonating.app).
+
+###### Privacy Policy for Uncover Reader - Last Updated: September 9, 2023
