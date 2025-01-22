@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Test
+  site_title: Rezonating Apps
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -8,15 +8,15 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Projects'
-      url: '/'
-    - title: 'Blog'
-      url: '/blog/'
+    # - title: 'Projects'
+    #   url: '/'
+    # - title: 'Blog'
+    #   url: '/blog/'
 
 footer_settings:
   logo_image: 
   logo_width: 100
-  tagline: A beautiful, minimal portfolio Jekyll theme
+  tagline: 
 
 hero_settings:
   background_image: /images/backgrounds/background-hero.svg
