@@ -1,0 +1,93 @@
+{
+    "name": "Cabinit: Private Photo Vault",
+    "subtitle": "Lock, hide, and secure your photos, files, and videos with PIN and emoji protection.",
+    "description": "Introducing Cabinit: The Ultimate Secure File Locker and Private Content Sharing App\n\nAre you tired of compromising your privacy when saving the content you love? Look no further than Cabinit – the app designed to keep your favorite files hidden and secure, away from prying eyes on your phone. Download now and discover a world of private sharing possibilities!\n\nPrivate Folders\nWith Cabinit, you can create exclusive folders to securely store and organize your photos, files, videos, web links, and more. These folders are for your eyes only, ensuring your cherished content remains truly private.\n\nPassword Protection\nEach private folder you create is safeguarded by a 6-digit PIN code and an Emoji of your choice, adding an extra layer of security. Use familiar PIN codes with the added peace of mind that your content stays hidden.\n\nDirect Sharing\nSharing photos, files, videos, and web links with your private cabin is as easy as sending them to a friend. Simply use the direct sharing feature from other apps, and your content will be waiting for you the next time you access your private folder.\n\nPrivate Browser (BETA)\nUnlock a private browsing experience within your secure folder. Access the web, browse history, manage bookmarks, and more, all behind the same password protection as your private content.\n\nLots of Customizations\nPersonalize your private folders with a variety of customization options. Choose themes, add a home screen picture, and make your app experience uniquely yours. Cabinit ensures your private world reflects your style.\n\nAd-Free and Cloudless\nUnlike other file locker apps, Cabinit doesn't bombard you with invasive ads or compromise your content's privacy. We go the extra mile by not integrating with external cloud services that back up your content. Your privacy matters to us.\n\nUpgrade to Cabinit PREMIUM for even more exclusive features:\n\nMultiple Folders\nExpand your private domain with additional folders, each protected by its own PIN and emoji combinations. External apps can easily share content with all your private folders.\n\nVideo and Audio Playback\nEnjoy seamless playback of supported files directly within the app. Watch your favorite videos and listen to audio files without leaving the secure confines of Cabinit.\n\nPDF/CBZ/CBR Support\nImmerse yourself in a world of literature with supported document file reading within your private folder. Great for books, comics, manga, and more, all safely stored and accessible.\n\nNo File Limits\nLeave file limits behind and store even more content in your private folders. Never worry about running out of space again.\n\nFace ID\nAdd an additional layer of security to your private folders with Face ID. Your unique facial features provide an extra safeguard for your valuable content.\n\nSupport Indies\nBy subscribing to Cabinit PLUS, you'll be supporting our team and fueling our much-needed coffee supply. Join us in championing privacy and independence!\n\nDownload Cabinit now and experience the freedom of private content sharing. Your privacy deserves the best!\n\nTerms of Use: https://www.rezonating.app/terms\nPrivacy Policy: https://www.rezonating.app/privacy-policy",
+    "icon": "icon.png",
+    "coverImage": "screenshots/cover.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/cabinit-private-photo-vault/id1631243885",
+    "accentColor": "#2563eb",
+    "tags": [
+        "Utilities",
+        "Photo & Video"
+    ],
+    "screenshots": [
+        "screenshots/screen1.jpg",
+        "screenshots/screen2.jpg",
+        "screenshots/screen3.jpg",
+        "screenshots/screen4.jpg",
+        "screenshots/screen5.jpg",
+        "screenshots/screen6.jpg",
+        "screenshots/screen7.jpg",
+        "screenshots/screen8.jpg"
+    ],
+    "features": [
+        {
+            "icon": "🔒",
+            "title": "Private Folders",
+            "description": "Create exclusive folders to securely store and organize your photos, files, videos, and web links. Your content stays truly private."
+        },
+        {
+            "icon": "🔑",
+            "title": "PIN + Emoji Protection",
+            "description": "Each folder is safeguarded by a 6-digit PIN code and an emoji of your choice, adding an extra layer of security."
+        },
+        {
+            "icon": "📤",
+            "title": "Direct Sharing",
+            "description": "Share photos, files, and videos to your private folders as easily as sending them to a friend — directly from any app."
+        },
+        {
+            "icon": "🌐",
+            "title": "Private Browser",
+            "description": "Browse the web privately within your secure folder. History, bookmarks, and more — all behind your password."
+        },
+        {
+            "icon": "🎨",
+            "title": "Customizable Themes",
+            "description": "Personalize your folders with themes, home screen pictures, and more. Make your private world reflect your style."
+        },
+        {
+            "icon": "📵",
+            "title": "Ad-Free & Cloudless",
+            "description": "No invasive ads, no external cloud services. Your content never leaves your device. Privacy comes first."
+        }
+    ],
+    "termsAndConditions": {
+        "lastUpdated": "March 21, 2026",
+        "sections": [
+            {
+                "title": "Acceptance of Terms",
+                "content": "By downloading or using Cabinit: Private Photo Vault, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the app."
+            },
+            {
+                "title": "Use License",
+                "content": "We grant you a limited, non-exclusive, non-transferable license to use Cabinit: Private Photo Vault for personal, non-commercial purposes subject to these terms."
+            },
+            {
+                "title": "Disclaimer",
+                "content": "The app is provided \"as is\" without warranty of any kind. We do not guarantee that the app will be error-free or uninterrupted."
+            },
+            {
+                "title": "Contact",
+                "content": "If you have questions about these terms, please reach out to the developer."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "lastUpdated": "March 21, 2026",
+        "sections": [
+            {
+                "title": "Overview",
+                "content": "Your privacy is important to us. This policy explains what information Cabinit: Private Photo Vault collects, how it is used, and your rights."
+            },
+            {
+                "title": "Data Collection",
+                "content": "Please refer to our full privacy policy for details on data collection and usage."
+            },
+            {
+                "title": "Contact Us",
+                "content": "If you have questions about this privacy policy, please reach out to the developer."
+            }
+        ]
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezonating Apps</title>
+    <title>Terms & Conditions</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,29 +41,16 @@
         </nav>
     </aside>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-badge animate-fade-in">Rezonating Apps, LLC</div>
-            <h1 class="hero-title animate-fade-in-up">
-                Crafting <span class="gradient-text">Beautiful</span> Apps
-            </h1>
-            <p class="hero-subtitle animate-fade-in-up delay-1">
-                Thoughtfully designed iOS applications
-            </p>
-        </div>
-        <div class="hero-glow"></div>
-    </header>
-
-    <!-- Apps Grid -->
-    <main class="apps-section">
+    <!-- Legal Content -->
+    <main class="legal-page">
         <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title">Apps</h2>
-                <div class="section-line"></div>
+            <div class="legal-header animate-fade-in-up">
+                <a class="legal-back" id="back-link" href="#">&larr; Back to App</a>
+                <h1 class="legal-title" id="legal-title">Terms & Conditions</h1>
+                <p class="legal-updated" id="legal-updated"></p>
             </div>
-            <div class="apps-grid" id="apps-grid">
-                <!-- Dynamically populated by JS -->
+            <div class="legal-content animate-fade-in-up delay-1" id="legal-content">
+                <!-- Populated by JS -->
             </div>
         </div>
     </main>
@@ -79,6 +66,6 @@
 
     <script src="js/apps-registry.js"></script>
     <script src="js/sidebar.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/legal-page.js"></script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">⌘</span>
+                <span class="nav-logo-text">Rezonating Apps</span>
+            </a>
+            <div class="nav-right">
+                <div class="nav-links" id="nav-links">
+                    <!-- Populated by JS -->
+                </div>
+                <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open app navigation">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    <span>Apps</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title">Our Apps</h3>
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <nav class="sidebar-apps" id="sidebar-apps">
+            <!-- Populated by JS -->
+        </nav>
+    </aside>
+
+    <!-- App Hero -->
+    <header class="app-hero" id="app-hero">
+        <div class="app-hero-content">
+            <div class="app-hero-info">
+                <img class="app-icon animate-fade-in" id="app-icon" src="" alt="">
+                <h1 class="app-title animate-fade-in-up" id="app-title"></h1>
+                <p class="app-subtitle animate-fade-in-up delay-1" id="app-subtitle"></p>
+                <div class="app-actions animate-fade-in-up delay-2">
+                    <a class="btn btn-primary" id="app-store-link" href="#" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8l4 4-4 4M8 12h8"/></svg>
+                        Download on the App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </header>
+
+    <!-- Screenshots -->
+    <section class="screenshots-section" id="screenshots-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Screenshots</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="screenshots-carousel" id="screenshots-carousel">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section" id="features-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Features</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="features-grid" id="features-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section class="description-section" id="description-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">About</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="description-content" id="description-content">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-links" id="footer-links">
+                    <!-- Populated by JS -->
+                </div>
+                <p class="footer-text">&copy; <span id="footer-year"></span> Rezonating Apps, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/apps-registry.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/app-page.js"></script>
+</body>
+</html>
