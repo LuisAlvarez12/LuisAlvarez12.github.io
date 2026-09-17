@@ -6,6 +6,18 @@ A beautiful, dark-themed static portfolio site for showcasing iOS apps. Each app
 
 ## Quick Start
 
+### Import with Codex
+
+Use the project skill with an App Store link:
+
+```text
+$import-portfolio-app https://apps.apple.com/us/app/id1631243885
+```
+
+The skill adds new apps or refreshes existing ones, imports US English artwork,
+preserves custom content, and verifies the local website. Its instructions live
+in [`.agents/skills/import-portfolio-app/SKILL.md`](.agents/skills/import-portfolio-app/SKILL.md).
+
 ### Option A: Import from the App Store (recommended)
 
 ```bash
@@ -48,7 +60,9 @@ This automatically downloads the icon, screenshots, generates a `config.json`, a
 
 ## Importing from the App Store
 
-The fastest way to add an app. The import script fetches everything from Apple's iTunes API:
+The import script fetches metadata from Apple's iTunes API and artwork directly
+from the US English App Store page. This avoids the different screenshot sets
+sometimes returned by the legacy API, even when requesting `country=us`.
 
 ```bash
 # Basic usage — folder name is auto-generated from the app name
@@ -61,7 +75,7 @@ The fastest way to add an app. The import script fetches everything from Apple's
 **What it does automatically:**
 - Extracts the App Store ID from the URL
 - Downloads the app icon (512x512)
-- Downloads all iPhone screenshots (high resolution)
+- Downloads the US English storefront's iPhone screenshots at their original dimensions
 - Generates `config.json` with name, description, features parsed from the listing
 - Registers the app in `js/apps-registry.js`
 
@@ -72,6 +86,25 @@ The fastest way to add an app. The import script fetches everything from Apple's
 - `termsAndConditions` / `privacyPolicy` — populated with placeholders; fill in your real legal text
 
 **Requirements:** `curl` and `python3` (both pre-installed on macOS).
+
+To refresh existing apps, pass their existing folder names and confirm the overwrite:
+
+```bash
+./scripts/import-app.sh "https://apps.apple.com/us/app/id1631243885" cabinit
+./scripts/import-app.sh "https://apps.apple.com/us/app/id6451499972" uncover
+```
+
+Refreshes update App Store metadata and images while preserving custom subtitles,
+features, colors, legal text, support links, and other custom config fields.
+
+## App Support
+
+`support.html` provides a public support page with the contact address
+`team@rezonating.app` and instructions for reporting issues. The homepage also
+displays the email address directly. Both work without JavaScript.
+
+After deploying, use `https://luisalvarez12.github.io/support.html` as the Support
+URL in App Store Connect. Keep the support email current in both HTML pages.
 
 ---
 

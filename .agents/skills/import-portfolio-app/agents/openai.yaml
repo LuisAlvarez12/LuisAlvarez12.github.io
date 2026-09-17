@@ -1,0 +1,4 @@
+interface:
+  display_name: "Import Portfolio App"
+  short_description: "Add an App Store app to the Rezonating website"
+  default_prompt: "Use $import-portfolio-app to add or refresh this app on the website from its App Store link."

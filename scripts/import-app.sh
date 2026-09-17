@@ -43,6 +43,8 @@ if [ $# -lt 1 ]; then
 fi
 
 APP_URL="$1"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # Extract App Store ID from URL
 APP_ID=$(echo "$APP_URL" | grep -oE 'id[0-9]+' | sed 's/id//')
@@ -54,8 +56,8 @@ info "App Store ID: $APP_ID"
 
 # ─── Fetch metadata from iTunes API ───
 info "Fetching app metadata from iTunes API..."
-API_URL="https://itunes.apple.com/lookup?id=${APP_ID}&country=us"
-RAW_JSON=$(curl -sL "$API_URL")
+API_URL="https://itunes.apple.com/lookup?id=${APP_ID}&country=us&lang=en_us"
+RAW_JSON=$(curl --fail --silent --show-error --location "$API_URL")
 
 RESULT_COUNT=$(echo "$RAW_JSON" | python3 -c "import sys,json; print(json.load(sys.stdin)['resultCount'])")
 if [ "$RESULT_COUNT" -eq 0 ]; then
@@ -93,12 +95,17 @@ STORE_URL=$(extract trackViewUrl "$APP_URL")
 PRICE=$(extract formattedPrice "Free")
 RATING=$(extract averageUserRating "0")
 
-# Get screenshot URLs
-SCREENSHOTS=$(echo "$RAW_JSON" | python3 -c "
+# Use the artwork actually displayed by the US English storefront. The legacy
+# Lookup API can return a different screenshot set even with country=us.
+info "Fetching US English storefront artwork..."
+STOREFRONT_ASSETS=$(curl --fail --silent --show-error --location \
+    -H 'Accept-Language: en-US,en;q=0.9' \
+    "https://apps.apple.com/us/app/id${APP_ID}?l=en-US" \
+    | python3 "$SCRIPT_DIR/storefront-assets.py" "$APP_ID")
+ICON_URL=$(printf '%s' "$STOREFRONT_ASSETS" | python3 -c "import sys,json; print(json.load(sys.stdin)['icon'])")
+SCREENSHOTS=$(printf '%s' "$STOREFRONT_ASSETS" | python3 -c "
 import sys, json
-data = json.load(sys.stdin)['results'][0]
-urls = data.get('screenshotUrls', [])
-for u in urls:
+for u in json.load(sys.stdin)['screenshots']:
     print(u)
 ")
 
@@ -116,10 +123,6 @@ slug = re.sub(r'-+', '-', slug)
 print(slug)
 ")
 fi
-
-# ─── Project root detection ───
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 APP_DIR="$PROJECT_ROOT/apps/$SLUG"
 SCREENSHOTS_DIR="$APP_DIR/screenshots"
@@ -141,7 +144,7 @@ if [ -n "$ICON_URL" ]; then
     info "Downloading app icon..."
     # Get high-res icon (replace 512x512bb with 1024x1024bb for max quality)
     HIRES_ICON_URL=$(echo "$ICON_URL" | sed 's|/[0-9]*x[0-9]*bb\.|/512x512bb.|')
-    curl -sL "$HIRES_ICON_URL" -o "$APP_DIR/icon.png"
+    curl --fail --silent --show-error --location "$HIRES_ICON_URL" -o "$APP_DIR/icon.png"
     ok "Icon downloaded"
 else
     warn "No icon URL found"
@@ -154,10 +157,10 @@ if [ -n "$SCREENSHOTS" ]; then
     INDEX=1
     while IFS= read -r URL; do
         [ -z "$URL" ] && continue
-        # Get higher resolution screenshots
-        HIRES_URL=$(echo "$URL" | sed 's|/[0-9]*x[0-9]*bb\.|/600x0w.|')
+        # Keep the original storefront screenshot dimensions.
+        HIRES_URL="$URL"
         FILENAME="screen${INDEX}.jpg"
-        curl -sL "$HIRES_URL" -o "$SCREENSHOTS_DIR/$FILENAME"
+        curl --fail --silent --show-error --location "$HIRES_URL" -o "$SCREENSHOTS_DIR/$FILENAME"
         SCREENSHOT_FILES+=("screenshots/$FILENAME")
         echo "   Downloaded screenshot $INDEX"
         INDEX=$((INDEX + 1))
@@ -301,7 +304,16 @@ print(json.dumps(''))
     }
 }
 
-with open('$APP_DIR/config.json', 'w') as f:
+# Keep curated copy, legal text, and support links when refreshing an existing app.
+from pathlib import Path
+config_path = Path('$APP_DIR/config.json')
+if config_path.exists():
+    existing = json.loads(config_path.read_text())
+    for key, value in existing.items():
+        if key not in ('name', 'description', 'icon', 'coverImage', 'appStoreUrl', 'tags', 'screenshots'):
+            config[key] = value
+
+with config_path.open('w') as f:
     json.dump(config, f, indent=4, ensure_ascii=False)
 "
 
