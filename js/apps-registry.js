@@ -9,5 +9,6 @@
  */
 const APPS = [
     "cabinit",
-    "uncover"
+    "uncover",
+    "mica"
 ];

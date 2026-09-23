@@ -1,0 +1,95 @@
+{
+    "name": "Art Reference Board: Mica",
+    "subtitle": "Collect, organize, and study visual references on an infinite canvas.",
+    "description": "Your references should stay as close as your next brushstroke.\n\nMica is an art reference board built for illustrators, painters, animators, concept artists, character designers, tattoo artists, art students, and anyone who thinks visually. Gather images, photos, GIFs, WebP animations, video, and PDFs on a Metal-powered infinite canvas. Then study color, value, shape, pose, and motion without breaking your creative flow.\n\nBUILD THE BOARD YOUR ART NEEDS\n• Import from Photos, Files, folders, camera, document scanner, or clipboard\n• Drag and drop on iPad and Mac\n• Save references from other apps with the system share sheet\n• Send new ideas to Capture Inbox and organize them later\n• Reuse original images from your asset library across multiple boards\n\nSTUDY—DON’T JUST COLLECT\n• Generate six- or twelve-color palettes from the dominant colors in your references\n• Combine grayscale with two-, three-, four-, or six-level posterization for value studies\n• Crop, flip, rotate, resize, and adjust opacity\n• Play GIF and WebP animation, inspect timelines, and step frame by frame\n• Step precisely through video and save useful frames to your canvas\n• Run timed reference studies with interval and shuffle controls\n• Annotate, highlight, measure, and sketch with Apple Pencil\n\nKEEP REFERENCES BESIDE YOUR WORK\n• Work beside your drawing or painting app on iPad\n• Float a reference with Picture in Picture on iPhone and iPad\n• Keep an always-on-top reference window on Mac\n• Enter focus or presentation mode when you want the interface to disappear\n\nORGANIZE SERIOUS CREATIVE PROJECTS\n• Build boards with pages and layers\n• Arrange references in rows, columns, or a masonry-style grid\n• Group, lock, hide, duplicate, snap, and reorder canvas items\n• Add folders, tags, notes, sticky notes, styled text, and saved canvas regions\n• Search reusable assets by name or tag, filter by dominant color, and find boards with Spotlight\n• Keep favorites, recent work, reusable assets, and captured ideas within reach\n\nPRIVATE, PORTABLE, AND YOURS\n• Work offline by default\n• Protect private boards and folders with a passcode or supported biometrics\n• Restore an earlier local board version without overwriting your current work\n• Export pages as PNG or PDF, share selected references, or export original files\n• Move a complete project with Mica’s portable .refboard archive\n\nCollect what inspires you. Study what matters. Keep creating.",
+    "icon": "icon.png",
+    "coverImage": "screenshots/screen1.jpg",
+    "appStoreUrl": "https://apps.apple.com/us/app/art-reference-board-mica/id6800322337",
+    "accentColor": "#2563eb",
+    "tags": [
+        "Graphics & Design",
+        "Productivity"
+    ],
+    "screenshots": [
+        "screenshots/screen1.jpg",
+        "screenshots/screen2.jpg",
+        "screenshots/screen3.jpg",
+        "screenshots/screen4.jpg",
+        "screenshots/screen5.jpg",
+        "screenshots/screen6.jpg",
+        "screenshots/screen7.jpg",
+        "screenshots/screen8.jpg",
+        "screenshots/screen9.jpg"
+    ],
+    "features": [
+        {
+            "icon": "🖼️",
+            "title": "Infinite Reference Boards",
+            "description": "Gather images, animations, video, and PDFs on an infinite canvas with pages and layers."
+        },
+        {
+            "icon": "🎨",
+            "title": "Color and Value Studies",
+            "description": "Extract color palettes, switch to grayscale, and use posterization to study values in your references."
+        },
+        {
+            "icon": "🎬",
+            "title": "Motion References",
+            "description": "Inspect animated GIFs and WebP files frame by frame, or step through video and save frames to a board."
+        },
+        {
+            "icon": "✏️",
+            "title": "Draw and Annotate",
+            "description": "Sketch, highlight, measure, and annotate references with Apple Pencil."
+        },
+        {
+            "icon": "🪟",
+            "title": "References Beside Your Work",
+            "description": "Use Picture in Picture on iPhone and iPad, work beside a drawing app on iPad, or keep a reference window on top on Mac."
+        },
+        {
+            "icon": "📁",
+            "title": "Organize and Export",
+            "description": "Sort assets with folders and tags, then export pages, original files, or a portable .refboard project archive."
+        }
+    ],
+    "termsAndConditions": {
+        "lastUpdated": "March 21, 2026",
+        "sections": [
+            {
+                "title": "Acceptance of Terms",
+                "content": "By downloading or using Art Reference Board: Mica, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use the app."
+            },
+            {
+                "title": "Use License",
+                "content": "We grant you a limited, non-exclusive, non-transferable license to use Art Reference Board: Mica for personal, non-commercial purposes subject to these terms."
+            },
+            {
+                "title": "Disclaimer",
+                "content": "The app is provided \"as is\" without warranty of any kind. We do not guarantee that the app will be error-free or uninterrupted."
+            },
+            {
+                "title": "Contact",
+                "content": "If you have questions about these terms, please reach out to the developer."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "lastUpdated": "March 21, 2026",
+        "sections": [
+            {
+                "title": "Overview",
+                "content": "Your privacy is important to us. This policy explains what information Art Reference Board: Mica collects, how it is used, and your rights."
+            },
+            {
+                "title": "Data Collection",
+                "content": "Please refer to our full privacy policy for details on data collection and usage."
+            },
+            {
+                "title": "Contact Us",
+                "content": "If you have questions about this privacy policy, please reach out to the developer."
+            }
+        ]
+    },
+    "supportUrl": "support.html"
+}

@@ -98,13 +98,6 @@
                 ? basePath + 'apps/' + app._slug + '/' + app.screenshots[0]
                 : '');
 
-        const tagsHtml = (app.tags || [])
-            .slice(0, 3)
-            .map(function (tag) {
-                return '<span class="app-card-tag">' + escapeHtml(tag) + '</span>';
-            })
-            .join('');
-
         card.innerHTML =
             '<div class="app-card-image">' +
                 (coverPath
@@ -116,7 +109,6 @@
                 '<img class="app-card-icon" src="' + escapeHtml(iconPath) + '" alt="' + escapeHtml(app.name) + ' icon" loading="lazy">' +
                 '<h3 class="app-card-title">' + escapeHtml(app.name) + '</h3>' +
                 '<p class="app-card-description">' + escapeHtml(app.subtitle || '') + '</p>' +
-                (tagsHtml ? '<div class="app-card-tags">' + tagsHtml + '</div>' : '') +
             '</div>' +
             '<div class="app-card-arrow">' +
                 '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +
