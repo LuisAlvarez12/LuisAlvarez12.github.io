@@ -448,6 +448,7 @@ a {
 
 .app-card-image {
     position: relative;
+    isolation: isolate;
     width: 100%;
     aspect-ratio: 16 / 10;
     overflow: hidden;
@@ -467,12 +468,16 @@ a {
 
 .app-card-image-overlay {
     position: absolute;
-    inset: 0;
+    /* Cover the clipped edge even when hover scaling lands on fractional pixels. */
+    inset: 0 0 -1px;
+    z-index: 1;
     background: linear-gradient(to top, var(--color-surface) 0%, transparent 50%);
     pointer-events: none;
 }
 
 .app-card-body {
+    position: relative;
+    background: var(--color-surface);
     padding: var(--space-6) var(--space-6) var(--space-8);
 }
 
