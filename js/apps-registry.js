@@ -10,5 +10,6 @@
 const APPS = [
     "cabinit",
     "uncover",
-    "mica"
+    "mica",
+    "peely"
 ];

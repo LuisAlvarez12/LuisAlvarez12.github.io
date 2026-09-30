@@ -1,0 +1,152 @@
+{
+    "name": "Sticker Maker & GIFs - Peely",
+    "subtitle": "Photo Cutouts & Postcards",
+    "description": "Turn your photos into personal stickers with Peely, a sticker maker for iPhone and iPad. Cut out people, pets and favorite objects, customize every detail, and build a collection that feels like you.\n\nMAKE STICKERS FROM PHOTOS\nRemove the background and keep subjects together or cut them out separately. Photo cutout processing happens on your device. Use the eraser to refine your sticker and restore details from the original cutout.\n\nYOUR OWN STICKER EDITOR\nAdd outlines and borders, layer text and drawings, and arrange a custom sticker composition. Organize your creations in folders, save favorites and keep your sticker collection easy to find.\n\nANIMATED STICKERS AND GIFS\nWith Peely Plus, turn videos and GIFs into animated stickers. Trim a short loop, preview the motion and remove the background when needed. Share your creations as animated GIFs or transparent PNG files.\n\nSTICKER PACKS FOR iMESSAGE\nUse Peely Plus to access your selected sticker folders in Messages. Export a Peely folder as a sticker pack that another Peely user can import, or share your creations through the system share sheet.\n\nPERSONAL DIGITAL POSTCARDS\nCombine photos, stickers and text on a two-sided digital postcard. With Peely Plus, export both sides as images or a flipping GIF to send someone a small, personal surprise.\n\nFREE TO START, MORE WITH PLUS\nCreate up to 7 stickers for free. Peely Plus is required for additional sticker creation, sharing and exports, animated imports, Messages sticker packs, premium effects, selected card templates and watched photo albums.\n\nAlbum features require Photos access. Watched albums update when you return to Peely and when iOS permits background work. iCloud photo originals may require an internet connection.\n\nTerms of Use: https://rezonating.app/terms.html?id=peely\nPrivacy Policy: https://rezonating.app/privacy.html?id=peely",
+    "icon": "icon.png",
+    "coverImage": "screenshots/iphone-1.png",
+    "appStoreUrl": "https://apps.apple.com/app/id6815235958",
+    "accentColor": "#1688ff",
+    "tags": [
+        "Photo & Video",
+        "Stickers"
+    ],
+    "screenshots": [
+        "screenshots/iphone-1.png",
+        "screenshots/iphone-2.png",
+        "screenshots/iphone-3.png",
+        "screenshots/iphone-4.png",
+        "screenshots/iphone-5.png",
+        "screenshots/ipad-1.png",
+        "screenshots/ipad-2.png",
+        "screenshots/ipad-3.png",
+        "screenshots/ipad-4.png",
+        "screenshots/ipad-5.png"
+    ],
+    "features": [
+        {
+            "icon": "✂️",
+            "title": "Photo Cutouts",
+            "description": "Remove backgrounds on your device and refine details with the eraser and restore tools."
+        },
+        {
+            "icon": "🎨",
+            "title": "Your Sticker Studio",
+            "description": "Add outlines, text, drawings, and effects to make each sticker your own."
+        },
+        {
+            "icon": "🎬",
+            "title": "Animated Stickers",
+            "description": "With Peely Plus, turn videos and GIFs into short loops and animated stickers."
+        },
+        {
+            "icon": "💬",
+            "title": "Messages Sticker Packs",
+            "description": "Use selected folders in Messages with Peely Plus, or share importable .peely packs."
+        },
+        {
+            "icon": "💌",
+            "title": "Digital Postcards",
+            "description": "Combine photos, stickers, and text on two-sided postcards with Plus export options."
+        },
+        {
+            "icon": "📁",
+            "title": "Organized Collections",
+            "description": "Keep stickers in folders and favorites, with optional iCloud library sync."
+        }
+    ],
+    "termsAndConditions": {
+        "lastUpdated": "September 30, 2026",
+        "sections": [
+            {
+                "title": "Acceptance and Provider",
+                "content": "These Terms of Use govern your use of Peely, provided by Rezonating Apps, LLC. By using the app, you agree to these terms. If you do not agree, stop using it. If you cannot legally agree on your own, a parent or guardian must authorize your use."
+            },
+            {
+                "title": "License and Apple Terms",
+                "content": "Peely is licensed, not sold. You may use it on compatible Apple devices you own or control in accordance with the App Store usage rules. Unless a separate custom license agreement is supplied for the app, Apple’s Standard End User License Agreement applies: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. These terms describe Peely’s features and services and do not remove rights provided by that license or applicable law."
+            },
+            {
+                "title": "Your Content and Acceptable Use",
+                "content": "You retain your rights in the photos, stickers, text, and postcards you create or import. You are responsible for having permission to use and share that material, including other people’s images. Using Peely does not give you rights to third-party artwork or bundled assets beyond their applicable license. Do not use the app to infringe intellectual property or privacy rights, harass others, distribute unlawful material, or circumvent purchase or security controls. Your content is processed and stored as described in the Privacy Policy."
+            },
+            {
+                "title": "Free Features and Peely Plus",
+                "content": "The current free tier allows creation of up to 7 stickers. Additional sticker creation, sharing and exports, animated imports, Messages sticker packs, premium effects, selected card templates, and watched albums require Peely Plus. Available plans, prices, trial eligibility, and paid features are shown in the app before purchase and may change for future offerings. We do not promise that every feature is available on every device or OS version."
+            },
+            {
+                "title": "Subscriptions, Cancellation, and Refunds",
+                "content": "If you purchase an auto-renewing subscription, Apple charges your Apple Account under the terms shown at purchase. It renews unless you cancel; cancel a trial or subscription at least 24 hours before its renewal time to avoid the next charge. Manage or cancel it in your Apple Account subscription settings. Removing Peely does not cancel a subscription. Use Restore Purchases to recover eligible access. Refund requests are handled through Apple, subject to its policies and any rights you have under applicable law."
+            },
+            {
+                "title": "Exports, Sync, and Backups",
+                "content": "You choose what to import, synchronize, and share. Keep independent backups of important work. Optional iCloud sync depends on your Apple account, storage, connectivity, and Apple’s services; disabling it does not automatically delete existing cloud copies. Exports sent to other apps or people are governed by those destinations, and Peely cannot retrieve or remove their copies. Postcards are digital creations; the app does not provide printing or postal delivery."
+            },
+            {
+                "title": "Availability and Limitations",
+                "content": "Background removal and animated exports can contain imperfections. Watched albums update when you return and when iOS allows background work; they are not a guarantee of continuous monitoring. Some original media may need to download from iCloud Photos. Apple, RevenueCat, and other services may be unavailable at times. We may update the app, but cannot guarantee uninterrupted operation, perfect output, or compatibility with future systems."
+            },
+            {
+                "title": "Disclaimer and Liability",
+                "content": "To the extent permitted by law, Peely is provided as available without a guarantee that it is error-free or suitable for every purpose. To the extent permitted by law, Rezonating Apps, LLC is not responsible for indirect or consequential losses resulting from use of the app, including loss of work or interruption. These terms do not exclude liability that cannot lawfully be excluded or limit mandatory consumer rights."
+            },
+            {
+                "title": "Changes and Ending Use",
+                "content": "You may stop using Peely at any time. Cancel subscriptions separately through Apple. We may revise these terms and will update the date on this page; material changes will be communicated through the app or website where appropriate. Any change remains subject to applicable law and existing purchase terms."
+            },
+            {
+                "title": "Contact",
+                "content": "For support or questions about these terms, contact Rezonating Apps, LLC at team@rezonating.app. Support details: https://rezonating.app/support.html."
+            }
+        ]
+    },
+    "privacyPolicy": {
+        "lastUpdated": "September 30, 2026",
+        "sections": [
+            {
+                "title": "Overview",
+                "content": "Rezonating Apps, LLC provides Peely, a sticker maker for iPhone and iPad. This policy explains how Peely handles your content, permissions, optional iCloud synchronization, purchases, and support requests."
+            },
+            {
+                "title": "Your Photos and Creations",
+                "content": "Peely processes photo cutouts and background removal on your device. Imported media, stickers, folders, user-assigned people names, favorites, card drafts, and editing preferences are stored locally to provide the app’s features. Peely does not upload your media to a developer-operated server for cutout processing. People groups are named and assigned by you; Peely does not infer identities or read the Photos People database."
+            },
+            {
+                "title": "Permissions and Photo Albums",
+                "content": "Peely accesses the photos and albums you authorize to import media and create stickers. Camera access lets you take a photo for a sticker; permission to add to Photos lets you save creations. Device motion is used for postcard tilt effects. You can change permissions in device Settings. Limited Photos access restricts the available library. Watched albums check for new photos when you return to the app and when iOS allows background processing. Downloading originals stored in iCloud Photos may involve Apple’s services and require an internet connection."
+            },
+            {
+                "title": "Optional iCloud Sync and Backups",
+                "content": "If you enable iCloud sync, Peely sends sticker images and library information, including collections and user-assigned people groups, to your Apple account’s private CloudKit database to synchronize your library. The app stores an iCloud account identifier locally to detect account changes. Sync is optional and can be disabled in Peely. Disabling sync stops future synchronization; it does not by itself erase previously uploaded data. Apple manages iCloud storage and any device backups you enable under its own policies."
+            },
+            {
+                "title": "Sharing and Extensions",
+                "content": "Peely’s Share and Messages extensions use shared storage on your device to receive imports and make selected sticker folders available in Messages. When you export or share stickers, animated GIFs, postcards, or .peely packs, your chosen destination and recipients receive that content. Exported packs can include names and organization information. Review what you share; recipient copies and other apps are outside our control. Peely does not need access to your message history to provide its sticker extension."
+            },
+            {
+                "title": "Purchases and RevenueCat",
+                "content": "Apple handles App Store payments. Peely uses RevenueCat to validate purchases, restore access, deliver paywalls, and manage Peely Plus entitlements. RevenueCat processes purchase history, subscription status, a generated app user identifier, and technical information needed for its service. Purchase information is also used for subscription reporting and analytics. We do not receive your full payment card details. Peely does not send your sticker library or imported photos to RevenueCat. RevenueCat’s privacy information is available at https://www.revenuecat.com/privacy."
+            },
+            {
+                "title": "Advertising and Tracking",
+                "content": "Peely does not sell your personal content or use it for targeted advertising. The reviewed app does not include an advertising SDK or request an advertising tracking identifier. Purchase reporting through RevenueCat is separate from your photo library and sticker content."
+            },
+            {
+                "title": "Support",
+                "content": "If you email team@rezonating.app, we receive your email address and the information you choose to include, such as your message, device details, or screenshots. We use that information to respond and troubleshoot. Please avoid sending private photos or other sensitive material unless needed for your request."
+            },
+            {
+                "title": "Retention, Deletion, and Your Choices",
+                "content": "Local content remains until you delete it or remove the app, subject to copies held in backups or shared extension storage. You can delete creations in Peely, revoke permissions in Settings, and disable iCloud sync. iCloud data and backups may remain after uninstalling; manage them through Apple’s iCloud storage controls where available. Deleting the app does not cancel a subscription or erase purchase records held by Apple or RevenueCat. Shared recipient copies cannot be recalled by Peely. Contact us to request access, correction, or deletion of support or purchase-related information we can identify, subject to applicable retention requirements."
+            },
+            {
+                "title": "Security and Children",
+                "content": "Peely uses iOS storage protections and Apple’s private CloudKit database for optional sync. No storage or transmission method is completely secure. Peely does not require a developer account or knowingly solicit personal information from children through account registration. A parent or guardian can contact us about information a child has sent to support."
+            },
+            {
+                "title": "Changes and Contact",
+                "content": "We may update this policy as Peely changes and will update the date on this page. Questions about privacy or data requests can be sent to Rezonating Apps, LLC at team@rezonating.app."
+            }
+        ]
+    },
+    "supportUrl": "support.html"
+}
