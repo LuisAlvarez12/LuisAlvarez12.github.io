@@ -1275,3 +1275,158 @@ a {
     background: rgba(37, 99, 235, 0.3);
     color: var(--color-text);
 }
+
+/* Home: a centered galaxy, with the original app collection. */
+.home-page {
+    --color-bg: #08090e;
+    --color-surface: #101118;
+    --color-text-secondary: #a3a4b5;
+    --color-text-tertiary: #85869a;
+    --color-accent-hover: #8cb9ff;
+    --color-accent-glow: rgba(126, 152, 235, 0.14);
+    --gradient-primary: linear-gradient(115deg, #d5c9f6, #a89bdc 55%, #83b6f5);
+    --gradient-subtle: linear-gradient(135deg, rgba(174, 155, 226, 0.08), rgba(96, 153, 244, 0.08));
+}
+.home-page .noise-overlay { opacity: 0.018; }
+.home-page .nav { padding: 23px 0; }
+.home-page .nav.scrolled { background: rgba(8, 9, 14, 0.88); }
+.home-page .nav-logo { font-size: 16px; letter-spacing: -0.025em; }
+.home-page .nav-logo-icon {
+    background: transparent;
+    width: 28px;
+    height: 28px;
+    color: #c8bceb;
+    font-size: 32px;
+}
+.home-page .sidebar-toggle { background: rgba(255, 255, 255, 0.035); }
+.home-page :is(a, button):focus-visible { outline: 2px solid #a9bcff; outline-offset: 6px; }
+.home-page .hero {
+    min-height: auto;
+    padding: 125px 24px 0;
+    text-align: center;
+    display: block;
+    isolation: isolate;
+    background: radial-gradient(ellipse at 50% 65%, rgba(95, 77, 146, 0.08), transparent 55%),
+                radial-gradient(ellipse at 62% 57%, rgba(54, 107, 188, 0.05), transparent 45%);
+}
+.hero-inner {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-page .hero-content { z-index: 4; width: 100%; }
+.home-page .hero-title {
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 500;
+    text-wrap: balance;
+    line-height: 1.12;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+.home-page .gradient-text { animation: none; }
+.hero-stars { position: absolute; inset: 75px 0 0; pointer-events: none; z-index: -1; }
+.hero-stars > span {
+    position: absolute;
+    width: var(--star-size);
+    height: var(--star-size);
+    background: #c4d0f5;
+    border-radius: 50%;
+    opacity: 0.35;
+    animation: star-twinkle var(--star-duration) var(--star-delay) ease-in-out infinite;
+}
+@keyframes star-twinkle { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.65; } }
+.galaxy {
+    position: relative;
+    width: min(100%, 940px);
+    height: 500px;
+    margin: 10px 0 0;
+}
+.galaxy-halo {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse, rgba(177, 150, 231, 0.1), rgba(74, 127, 212, 0.055) 38%, transparent 65%);
+    pointer-events: none;
+}
+.galaxy-plane {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    top: calc(50% - 12px);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-18.33deg) scaleY(0.64);
+    pointer-events: none;
+}
+.galaxy-disk { width: 100%; height: 100%; animation: galaxy-spin 200s linear infinite; }
+@keyframes galaxy-spin { to { transform: rotate(360deg); } }
+.galaxy-orbit {
+    position: absolute;
+    border: 1px solid rgba(147, 163, 222, 0.075);
+    border-radius: 50%;
+    inset: 11%;
+}
+.galaxy-orbit-inner { inset: 18%; border-color: rgba(175, 158, 210, 0.045); }
+.galaxy-apps { position: absolute; inset: 0; }
+.galaxy-app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    opacity: 0;
+    perspective: 300px;
+    border-radius: 9px;
+}
+.galaxy-app::before {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    background: radial-gradient(circle, rgba(135, 167, 249, 0.23), transparent 70%);
+    z-index: -1;
+}
+.galaxy-app img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 27%;
+    border: 1px solid rgba(239, 232, 255, 0.24);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35), 0 0 16px rgba(137, 161, 236, 0.18);
+    transform-style: preserve-3d;
+}
+.galaxy.is-paused .galaxy-disk, .hero-stars.is-paused > span { animation-play-state: paused; }
+.home-page .apps-section { padding: 36px 0 var(--space-24); scroll-margin-top: 95px; }
+.home-page .section-header { margin-bottom: 36px; }
+.home-page .section-title {
+    font-size: 28px;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    text-transform: none;
+    color: var(--color-text);
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .home-page .hero { padding: 120px 24px 0; }
+    .galaxy { width: min(110vw, 760px); height: 420px; }
+}
+@media (max-width: 480px) {
+    .home-page .nav { padding: 18px 0; }
+    .home-page .nav-logo { font-size: 14px; gap: 8px; }
+    .home-page .nav-right { gap: 17px; }
+    .home-page .hero { padding: 120px 20px 0; }
+    .home-page .hero-title { font-size: clamp(32px, 8.3vw, 40px); }
+    .galaxy { width: 114vw; height: 310px; margin-top: 20px; }
+    .galaxy-app { width: 27px; height: 27px; }
+    .home-page .apps-section { padding-top: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .home-page *, .home-page *::before, .home-page *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .home-page .galaxy-disk { animation: none !important; }
+    .home-page .animate-on-scroll, .home-page .app-card { opacity: 1; transform: none; }
+}

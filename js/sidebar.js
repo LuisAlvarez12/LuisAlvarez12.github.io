@@ -57,7 +57,7 @@
     var currentSlug = getParam('id') || '';
 
     async function loadSidebarApps() {
-        if (!window.APPS || APPS.length === 0) return;
+        if (typeof APPS === 'undefined' || APPS.length === 0) return;
 
         var configs = await Promise.all(
             APPS.map(async function (slug) {

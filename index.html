@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
-<body>
+<body class="home-page">
     <div class="noise-overlay"></div>
 
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">
-                <span class="nav-logo-icon">⌘</span>
+                <span class="nav-logo-icon" aria-hidden="true">✳</span>
                 <span class="nav-logo-text">Rezonating Apps</span>
             </a>
             <div class="nav-right">
@@ -45,26 +45,31 @@
     </aside>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-badge animate-fade-in">Rezonating Apps, LLC</div>
-            <h1 class="hero-title animate-fade-in-up">
-                Crafting <span class="gradient-text">Beautiful</span> Apps
-            </h1>
-            <p class="hero-subtitle animate-fade-in-up delay-1">
-                Thoughtfully designed iOS applications
-            </p>
-            <p class="hero-support">Need help with an app? <a href="support.html">Contact support &rarr;</a></p>
+    <header class="hero" aria-labelledby="hero-title">
+        <div class="hero-stars" id="hero-stars" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in-up" id="hero-title">
+                    Building<br><span class="gradient-text">Rezonating</span><br>Experiences
+                </h1>
+            </div>
+            <div class="galaxy" id="galaxy" role="group" aria-label="A slowly spinning galaxy of our apps">
+                <div class="galaxy-halo" aria-hidden="true"></div>
+                <div class="galaxy-plane" aria-hidden="true">
+                    <canvas class="galaxy-disk" id="galaxy-canvas" width="900" height="900"></canvas>
+                    <div class="galaxy-orbit galaxy-orbit-inner"></div>
+                    <div class="galaxy-orbit galaxy-orbit-outer"></div>
+                </div>
+                <div class="galaxy-apps" id="galaxy-apps"></div>
+            </div>
         </div>
-        <div class="hero-glow"></div>
     </header>
 
     <!-- Apps Grid -->
-    <main class="apps-section">
+    <main class="apps-section" id="apps">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <h2 class="section-title">Apps</h2>
-                <div class="section-line"></div>
+                <h2 class="section-title">Recent Apps</h2>
             </div>
             <div class="apps-grid" id="apps-grid">
                 <!-- Dynamically populated by JS -->
@@ -95,6 +100,7 @@
 
     <script src="js/apps-registry.js"></script>
     <script src="js/sidebar.js"></script>
-    <script src="js/main.js?v=2"></script>
+    <script src="js/galaxy.js?v=4"></script>
+    <script src="js/main.js?v=4"></script>
 </body>
 </html>

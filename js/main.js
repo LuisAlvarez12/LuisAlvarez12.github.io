@@ -60,6 +60,8 @@
 
         const validConfigs = configs.filter(Boolean);
 
+        if (window.initAppGalaxy) window.initAppGalaxy(validConfigs, basePath);
+
         if (validConfigs.length === 0) {
             grid.innerHTML = `
                 <div class="empty-state" style="grid-column: 1 / -1;">

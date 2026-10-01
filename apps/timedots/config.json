@@ -1,0 +1,139 @@
+{
+    "name": "Time Dots: Year Progress",
+    "subtitle": "Countdown Widgets Life Habits",
+    "description": "See your year, count down to meaningful dates, and follow everyday habits in dots.\n\nTime Dots gives you a clear view of what has passed and what lies ahead, with a calm place for dates, routines, and a little perspective.\n\nSEE YOUR TIME\nExplore your day, week, month, or year. Choose a custom range, save your favorite Home views, or see life in weeks using a birthday and a horizon you choose.\n\nREMEMBER YOUR DATES\nCount down to birthdays, anniversaries, trips, and personal milestones. Track days since a meaningful beginning. Add repeating dates, notes, checklists, and optional reminders. Import selected Apple Calendar events as independent dates.\n\nFOLLOW YOUR HABITS\nChoose weekdays, every N days, or targets per week, month, or year. Check off a habit or record an amount with your own unit. Review your streaks and edit your recent eight-week history.\n\nMAKE IT YOURS\nChoose dot shapes and colors for Home and wallpapers. Save different Home views and switch between them. Export a still wallpaper for your screen.\n\nKEEP IT CLOSE\nStart with a free year widget showing the months and days remaining. Premium adds configurable period, date, habit, and overview widgets. Preview supported sizes in Widget Studio.\n\nKEEP YOUR DATA\niCloud sync is included when available. Export your data and restore a Time Dots backup. Your saved items remain accessible if Premium becomes unavailable.\n\nSTART FREE\nEnjoy period views, three active dates, three active habits, the year widget, iCloud, reminders, and data export. Premium unlocks unlimited active dates and habits plus configurable widgets.\n\nThe app interface is available in English and Spanish. Available for iPhone, iPad, and Mac. Requires iOS, iPadOS, or macOS 26 or later.\n\nTerms of Use: https://rezonating.app/terms.html?id=timedots\nPrivacy Policy: https://rezonating.app/privacy.html?id=timedots",
+    "icon": "icon.png",
+    "coverImage": "screenshots/screen1.png",
+    "appStoreUrl": "https://apps.apple.com/app/id6817182761",
+    "accentColor": "#ff5a00",
+    "tags": [
+        "Productivity",
+        "Lifestyle"
+    ],
+    "screenshots": [
+        "screenshots/screen1.png",
+        "screenshots/screen2.png",
+        "screenshots/screen3.png",
+        "screenshots/screen4.png",
+        "screenshots/screen5.png"
+    ],
+    "features": [
+        {
+            "icon": "🗓️",
+            "title": "See Your Time",
+            "description": "Explore day, week, month, year, custom ranges, and life in weeks."
+        },
+        {
+            "icon": "🎯",
+            "title": "Meaningful Dates",
+            "description": "Count down to milestones or track days since, with repeating dates and optional reminders."
+        },
+        {
+            "icon": "✅",
+            "title": "Everyday Habits",
+            "description": "Track check-offs or amounts, flexible schedules, streaks, and recent history."
+        },
+        {
+            "icon": "🟠",
+            "title": "Make It Yours",
+            "description": "Choose dot shapes and colors, save Home views, and export still wallpapers."
+        },
+        {
+            "icon": "📱",
+            "title": "Widgets at a Glance",
+            "description": "Start with a free year widget; Premium adds configurable date, habit, and period widgets."
+        },
+        {
+            "icon": "☁️",
+            "title": "Keep Your Data",
+            "description": "Use iCloud when available, import selected Calendar events, and export or restore backups."
+        }
+    ],
+    "privacyPolicy": {
+        "lastUpdated": "September 30, 2026",
+        "sections": [
+            {
+                "title": "Overview",
+                "content": "Time Dots is provided by Rezonating Apps, LLC. This policy explains how the app handles your dates, notes, birth date, habits, optional permissions, widgets, purchases, and support requests."
+            },
+            {
+                "title": "Your Data and iCloud",
+                "content": "Time Dots stores dates, notes, checklists, birth date and chosen life horizon, habit schedules and completion history, saved views, and preferences on your device. Its production storage uses Apple’s private CloudKit database through SwiftData to synchronize supported records when iCloud is available. Apple manages your account and cloud storage. Time Dots does not require a separate developer account or send your dates, birthdays, notes, or habit history to RevenueCat. Your Apple device backup settings may also preserve app data."
+            },
+            {
+                "title": "Calendar, Notifications, and Photos",
+                "content": "If you choose Calendar import, Time Dots requests permission to read Calendar events so you can select events and create independent dates in the app. Imported dates are not a continuing two-way link to the original events. You can revoke Calendar access in system Settings. Optional reminders are scheduled through Apple’s notification system; reminder text may appear on your lock screen depending on your settings. Photos permission is requested when an export needs to save to your photo library. These permissions are not required for the basic period views."
+            },
+            {
+                "title": "Widgets and Exports",
+                "content": "The app and its widget extension share data and snapshots through an App Group on your device to display dates, habits, and progress, and to save supported widget actions. Widget content can be visible to people who can see your screen. When you export a wallpaper, share information, or save a Time Dots backup, the chosen destination receives the exported content. Backups can include personal dates, notes, and habit history. Keep them private and review what you share. We cannot control copies held by recipients or other apps."
+            },
+            {
+                "title": "Purchases and RevenueCat",
+                "content": "Apple processes App Store payments. Time Dots integrates RevenueCat for purchase status, restoration, Premium entitlements, and remote paywalls when configured. RevenueCat processes purchase and subscription information, a generated app user identifier, and purchase or paywall interaction data to provide the service and subscription reporting. We do not receive your full payment card details. Your dates, birth date, notes, and habit history are not sent to RevenueCat. RevenueCat’s privacy information is available at https://www.revenuecat.com/privacy."
+            },
+            {
+                "title": "Tracking and Support",
+                "content": "The reviewed app does not include an advertising SDK or request an advertising tracking identifier. We do not sell your personal app content or use it for targeted advertising. If you email team@rezonating.app, we receive your address and whatever message, device information, or attachments you send. We use that information to respond and troubleshoot. Please avoid sending sensitive dates, notes, or habit history unless needed for your request."
+            },
+            {
+                "title": "Retention and Your Controls",
+                "content": "Export your data from Settings and delete individual dates or habits from their detail screens. Deletions also synchronize to other devices when iCloud sync is functioning. Removing the app removes local app storage but may leave cloud data, backups, exported files, or purchase records. Manage iCloud storage and backups through Apple’s controls where available. Deleting the app does not cancel a subscription. Contact us for requests concerning support or purchase-related information we can identify; applicable legal retention requirements may limit deletion."
+            },
+            {
+                "title": "Security and Children",
+                "content": "Time Dots uses system storage protections and Apple’s private iCloud database. No storage or transmission method can be guaranteed completely secure. The app does not require a developer account or knowingly solicit children’s personal information through registration. A parent or guardian can contact us about information a child has sent to support."
+            },
+            {
+                "title": "Changes and Contact",
+                "content": "We may update this policy as the app changes and will revise the date on this page. Questions about privacy and data requests can be sent to Rezonating Apps, LLC at team@rezonating.app."
+            }
+        ]
+    },
+    "termsAndConditions": {
+        "lastUpdated": "September 30, 2026",
+        "sections": [
+            {
+                "title": "Acceptance and Provider",
+                "content": "These Terms of Use apply to Time Dots, provided by Rezonating Apps, LLC. By using the app, you agree to these terms. If you do not agree, stop using it. If you cannot legally agree on your own, a parent or guardian must authorize your use."
+            },
+            {
+                "title": "License and Apple Terms",
+                "content": "Time Dots is licensed, not sold. You may use it on compatible Apple devices you own or control in accordance with App Store usage rules. Unless a separate custom license is supplied, Apple’s Standard End User License Agreement applies: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. These terms do not remove rights provided by that agreement or applicable law."
+            },
+            {
+                "title": "Your Content and Use",
+                "content": "You retain your rights in your dates, notes, checklists, and other content. You are responsible for the information you enter and for having permission to import or share other people’s information. Do not use the app unlawfully, infringe others’ rights, or circumvent purchase or security controls. Data handling is described in the Privacy Policy."
+            },
+            {
+                "title": "Free Features and Premium",
+                "content": "The current free tier includes period views, three active dates, three active habits, the year widget, iCloud when available, reminders, and data export. Premium unlocks unlimited active dates and habits and configurable period, date, habit, and overview widgets. Your saved items remain accessible if Premium becomes unavailable. Prices, available plans, and any trial terms are shown before purchase; future offerings and supported features may change."
+            },
+            {
+                "title": "Purchases and Subscriptions",
+                "content": "Apple charges your Apple Account under the terms shown at purchase. If you choose an auto-renewing subscription, it renews unless canceled; cancel a trial or subscription at least 24 hours before renewal to avoid the next charge. Manage or cancel subscriptions through your Apple Account settings. Removing Time Dots does not cancel a subscription. Use Restore Purchases to recover eligible access. Refund requests are handled through Apple, subject to its policies and mandatory consumer rights."
+            },
+            {
+                "title": "Time Views, Habits, and Reminders",
+                "content": "Time views and life-in-weeks displays are visual tools based on your dates and chosen horizon. They do not predict lifespan or provide medical advice. Habit records are personal organizational tools. Reminders and widget refreshes depend on system permissions, scheduling, device state, and time settings and may be delayed. Do not rely on the app as the sole reminder for an urgent or critical obligation."
+            },
+            {
+                "title": "Calendar, Sync, and Backups",
+                "content": "Calendar import creates independent dates from selected events; later Calendar changes may not update those dates. iCloud synchronization depends on your Apple account, available storage, connectivity, and Apple’s services. Keep independent backups of important data. You choose export destinations and are responsible for protecting backup files. The app cannot recall information already shared with others."
+            },
+            {
+                "title": "Availability and Liability",
+                "content": "To the extent permitted by law, Time Dots is provided as available without a guarantee of uninterrupted operation, perfect accuracy, or future compatibility. To the extent permitted by law, Rezonating Apps, LLC is not responsible for indirect or consequential losses, including lost data or missed reminders. Nothing in these terms excludes liability that cannot lawfully be excluded or limits mandatory consumer rights."
+            },
+            {
+                "title": "Changes and Ending Use",
+                "content": "You may stop using the app at any time; cancel subscriptions separately through Apple. We may revise these terms and update the date on this page. Material changes will be communicated through the app or website where appropriate, subject to applicable law and existing purchase terms."
+            },
+            {
+                "title": "Contact",
+                "content": "For support or questions about these terms, contact Rezonating Apps, LLC at team@rezonating.app. Support details: https://rezonating.app/support.html."
+            }
+        ]
+    },
+    "supportUrl": "support.html"
+}
