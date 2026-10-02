@@ -1,0 +1,158 @@
+{
+    "name": "Trash Cam",
+    "subtitle": "Temporary photos. Less clutter.",
+    "description": "Coming soon for iPhone and iPad.\n\nCapture what you need now without keeping it forever. Trash Cam saves quick photos and videos into its own albums instead of automatically filling your Camera Roll. Give an album a timer, choose Never, or pause automatic deletion when you need more time. Expired app albums are removed when deletion checks run, rather than at a guaranteed moment in the background.\n\nReview the Photos library you already have with Photo Cleaner. Swipe to keep or mark items, undo a decision, and review your selection before confirming deletion through Apple Photos. Temporary album timers apply to Trash Cam albums; Cleaner is a separate, deliberate review of your Photos library.\n\nKeep useful details together with Spaces, album descriptions, photo names, notes, and markup. Save selected keepers to Photos, share files, or create a basic PDF. Premium adds full album gallery access, protected albums, extra camera skins, optional capture locations, and Pro PDF reports with notes.\n\nYour temporary album content stays on your device unless you choose to export or share it. Export important photos before deleting an album or letting its timer expire; Trash Cam has no recovery bin for its app-local album files.",
+    "icon": "icon.png",
+    "coverImage": "screenshots/screen1.png",
+    "appStoreUrl": "",
+    "accentColor": "#2563eb",
+    "supportUrl": "support.html",
+    "tags": [
+        "Photo & Video",
+        "Productivity"
+    ],
+    "screenshots": [
+        "screenshots/screen1.png",
+        "screenshots/screen2.png",
+        "screenshots/screen3.png",
+        "screenshots/screen4.png"
+    ],
+    "features": [
+        {
+            "icon": "📷",
+            "title": "Capture Without Clutter",
+            "description": "Save quick photos and videos directly into Trash Cam albums, with no automatic Camera Roll copy."
+        },
+        {
+            "icon": "⏳",
+            "title": "Albums With a Timer",
+            "description": "Choose a retention timer or Never. Pause automatic deletion, or protect individual albums with Premium."
+        },
+        {
+            "icon": "🧹",
+            "title": "Clean With Control",
+            "description": "Review Apple Photos by swiping or selecting items, then confirm what to delete."
+        },
+        {
+            "icon": "🗂️",
+            "title": "Spaces for Your Projects",
+            "description": "Group albums for work, home, study, and errands, with names and descriptions."
+        },
+        {
+            "icon": "📝",
+            "title": "Keep the Details",
+            "description": "Add photo notes and markup so a quick reference stays useful."
+        },
+        {
+            "icon": "📄",
+            "title": "Share Your Keepers",
+            "description": "Save to Photos, share files, or create a basic PDF. Premium adds Pro PDF reports with notes."
+        }
+    ],
+    "privacyPolicy": {
+        "lastUpdated": "October 2, 2026",
+        "sections": [
+            {
+                "title": "Overview",
+                "content": "Trash Cam (also called TrashCam) is provided by Rezonating Apps, LLC. This policy explains how the app handles temporary photos and videos, albums, notes, optional permissions, Photos-library reviews, purchases, and support requests."
+            },
+            {
+                "title": "Photos, Albums, and Local Storage",
+                "content": "Photos and videos captured in Trash Cam are saved in app storage on your device, rather than automatically added to Apple Photos. Album and Space names, descriptions, notes, markup, photo metadata, tasks, preferences, saved report records, and optional capture locations are also stored on your device. The app does not require a separate developer account and does not provide its own hosted photo library or album synchronization service. System device backups may include app data depending on your Apple settings; local storage does not mean that backups or exported copies are excluded."
+            },
+            {
+                "title": "Camera, Microphone, and Documents",
+                "content": "Trash Cam requests camera access for photos, videos, and document scanning. Microphone access is used to record video sound. Document scans and recognized text are processed using Apple frameworks on your device and may be saved as images, document originals, or photo notes. Captures, scans, and notes are not uploaded to a developer server for recognition or sent to RevenueCat. You can change permissions in system Settings."
+            },
+            {
+                "title": "Apple Photos and Cleaner",
+                "content": "Saving a keeper to Photos requests permission to add the selected media. Photo Cleaner requests access to the Photos library so it can show authorized media and metadata, organize your review, and request deletion of the items you confirm. Limited Photos access restricts the media available to the app. Apple may retrieve originals from iCloud Photos as part of system library access, subject to your settings and connectivity. Cleaner keeps local review decisions and deletion-history metadata, such as asset identifiers, dates, media type, dimensions, duration, and estimated sizes. The deletion-history records do not retain thumbnails, filenames, or capture locations. Cleaner does not upload your photo library to a developer server. Library deletions require your confirmation and are handled through Apple Photos, including Recently Deleted and any iCloud Photos synchronization."
+            },
+            {
+                "title": "Optional Location, Maps, and Authentication",
+                "content": "If you enable capture locations and grant location permission, Trash Cam can attach coordinates to a photo. Photos-library map browsing uses location metadata in the media you authorize. Map displays use Apple MapKit, and Apple handles map service requests under its own policies. You can disable capture geotagging or revoke location access in system Settings. Optional biometric access uses Apple’s authentication system; the app receives an authentication result, not your Face ID or Touch ID biometric templates. An app PIN is stored in the device Keychain. These controls do not encrypt exported files or prevent someone from seeing content you share."
+            },
+            {
+                "title": "Widgets, Reminders, Search, and Capture Extensions",
+                "content": "The app shares supported album information with its widgets, shortcuts, and locked-camera capture extension through an App Group on your device. Album search entries can be indexed locally through Spotlight. Optional notifications and Live Activities can display album names, tasks, counts, or expiry information on your screen or Lock Screen. Configure notification visibility and widget placement to suit your privacy needs. Captures made through the locked-camera extension are transferred to the main app through system-supported local storage."
+            },
+            {
+                "title": "Exports and Sharing",
+                "content": "When you save media to Photos, export files or a PDF, or use the system share sheet, the destination receives the content you select. Exports can include photos, notes, names, markup, and other selected details. Review the export and its metadata before sharing. Copies saved to Photos, Files, backups, or recipients are separate from the temporary app album; deleting that album cannot recall those copies. Other apps and recipients have their own privacy practices."
+            },
+            {
+                "title": "Purchases and RevenueCat",
+                "content": "Apple processes App Store payments. Trash Cam uses RevenueCat to offer purchases and paywalls, validate purchase status, restore purchases, and manage Premium access. RevenueCat processes a generated app user identifier, transaction and subscription records, technical device and app information, and purchase or paywall interaction data needed for these services and subscription reporting. The app does not send your captured photos, videos, album notes, or location coordinates to RevenueCat. We do not receive your full payment card details. Purchase-related processing can take place outside your country. RevenueCat describes its services and end-user processing at https://www.revenuecat.com/privacy."
+            },
+            {
+                "title": "Advertising and Support",
+                "content": "The current app does not integrate an advertising SDK or request an advertising tracking identifier. We do not sell your personal app content or use it for targeted advertising. If you email team@rezonating.app, we receive your email address and the message, device details, and attachments you choose to send. We use that information to respond, troubleshoot, and maintain support records. Avoid sending private photos or sensitive notes unless they are needed for your request."
+            },
+            {
+                "title": "Retention, Deletion, and Your Choices",
+                "content": "Temporary albums can be deleted manually or become eligible for automatic removal based on their configured timer and last modification. Deletion checks run when the app has an opportunity to perform them; they do not promise exact background erasure. Never, global pause, and applicable protection settings can prevent timed deletion. Trash Cam has no app-local recovery bin for deleted album media. Export important content first. Cleaner deletion affects Apple Photos separately and follows Apple’s confirmation, recovery, and synchronization rules. Removing the app may leave shared App Group or Keychain data, system backups, exported media, support correspondence, or purchase records. Manage backups and Photos copies using Apple’s controls. Deleting the app does not cancel a subscription."
+            },
+            {
+                "title": "Privacy Requests and Security",
+                "content": "Depending on where you live, you may have rights to access, correct, delete, or obtain a copy of personal information we hold, restrict or object to processing, withdraw consent where applicable, or complain to your local privacy authority. Contact team@rezonating.app to make a request about support or purchase-related information we can identify. We may need to verify your request, and legal or transaction-retention obligations may limit deletion. We cannot retrieve app-local photos or notes from your device for you. The app uses Apple’s system storage and authentication facilities; no storage or transmission method is guaranteed completely secure."
+            },
+            {
+                "title": "Children, Changes, and Contact",
+                "content": "Trash Cam does not require registration or knowingly solicit children’s personal information through an account system. Parents or guardians can contact us about information a child has sent to support. We may update this policy as the app changes and will revise the date on this page. For privacy questions and requests, contact Rezonating Apps, LLC at team@rezonating.app."
+            }
+        ]
+    },
+    "termsAndConditions": {
+        "lastUpdated": "October 2, 2026",
+        "sections": [
+            {
+                "title": "Acceptance and Provider",
+                "content": "These Terms of Use apply to Trash Cam (also called TrashCam), provided by Rezonating Apps, LLC. By using the app, you agree to these terms. If you do not agree, stop using it. If you cannot legally agree on your own, a parent or guardian must authorize your use."
+            },
+            {
+                "title": "License and Apple Terms",
+                "content": "Trash Cam is licensed, not sold. You may use it on compatible Apple devices you own or control in accordance with App Store usage rules. Unless a separate custom license is supplied, Apple’s Standard End User License Agreement applies: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. These terms do not remove rights under that agreement or applicable law."
+            },
+            {
+                "title": "Your Content and Responsible Use",
+                "content": "You retain your rights in the photos, videos, scans, notes, and other content you create or import. You are responsible for permission to capture, process, and share other people’s images, documents, or personal information. Do not use the app unlawfully, infringe others’ rights, or circumvent purchase or security controls. Data handling is described in the Privacy Policy at https://rezonating.app/privacy.html?id=trashcam."
+            },
+            {
+                "title": "Temporary Albums and Permanent Deletion",
+                "content": "Trash Cam is designed to remove temporary app albums. A timer applies to the whole album and is based on its last modification. An expired album can be removed when deletion checks run, including when you return to the app; exact deletion at a particular time in the background is not guaranteed. Deleted app-local album files have no Trash Cam recovery bin. Choose Never, pause automatic deletion, or use applicable protection controls if you need to retain content, and export important media before expiry. Pinning alone does not protect an album unless the separate pinned-album protection setting is enabled. Neither a timer nor deletion constitutes a guarantee of secure erasure from system backups or copies elsewhere."
+            },
+            {
+                "title": "Photo Cleaner and Apple Photos",
+                "content": "Photo Cleaner reviews the Photos-library media you authorize and requests deletion only for items you confirm. This is separate from automatic expiry of Trash Cam albums. Review your selection carefully before confirming. Apple controls Recently Deleted, recovery periods, and propagation through iCloud Photos and your other devices. Estimates of file size or reclaimed storage may differ from actual device storage changes. Trash Cam cannot guarantee recovery after deletion or recall media that another app or recipient holds."
+            },
+            {
+                "title": "Free Features and Premium",
+                "content": "Free features include temporary capture, album timers and global pause, Spaces, notes, basic sharing, and manual Photos-library review. The free Trash Cam album gallery previews the first three media items; capture and latest-shot review can continue. Premium adds full album gallery access, individual album protection, additional camera skins, optional capture locations, and Pro PDF reports with notes. Prices, available plans, trials, and included features are shown before purchase. Features and supported devices may evolve, subject to applicable law and existing purchase terms."
+            },
+            {
+                "title": "Purchases, Trials, and Subscriptions",
+                "content": "Available purchase options may include subscriptions and a lifetime Premium unlock. Apple charges your Apple Account under the terms displayed at purchase. Auto-renewing subscriptions renew unless canceled. If you want to avoid the next charge, cancel before renewal; Apple instructs users to cancel a free or discounted trial at least 24 hours before it ends. Manage or cancel subscriptions through your Apple Account settings. Deleting the app does not cancel a subscription. Restore Purchases can restore eligible access. A lifetime unlock is a non-subscription purchase for the app’s supported lifetime; it does not promise perpetual operation of Apple services or every future product. Refund requests are handled by Apple, subject to its policies and mandatory consumer rights."
+            },
+            {
+                "title": "Permissions, Reminders, and Device Support",
+                "content": "Camera, microphone, Photos, location, and notification access are used for the features you choose. Denying or revoking a permission can limit those features. Widgets, shortcuts, Live Activities, reminders, locked-camera capture, and supported camera formats depend on your device, system version, settings, and system scheduling. Reminders can be delayed or unavailable; do not use them as the sole safeguard for important content or obligations."
+            },
+            {
+                "title": "Reports, Recognition, and Backups",
+                "content": "Notes, scans, recognized text, maps, and PDF reports are convenience tools and may contain errors. Verify important information before relying on it. The app does not certify documents, provide professional advice, or guarantee that photos and reports qualify as legal evidence. You choose what to export and where it is sent. Keep independent copies of important material; Trash Cam does not provide a hosted album backup service, and system backup availability is not guaranteed."
+            },
+            {
+                "title": "Availability and Liability",
+                "content": "To the extent permitted by law, Trash Cam is provided as available without guarantees of uninterrupted operation, perfect accuracy, or future compatibility. To the extent permitted by law, Rezonating Apps, LLC is not responsible for indirect or consequential losses, including lost photos, deleted notes, or missed reminders. Nothing in these terms excludes liability that cannot lawfully be excluded or limits mandatory consumer rights."
+            },
+            {
+                "title": "Changes and Ending Use",
+                "content": "You may stop using the app at any time; cancel subscriptions separately through Apple. We may revise these terms and update the date on this page. Material changes will be communicated through the app or website where appropriate, subject to applicable law and existing purchase terms."
+            },
+            {
+                "title": "Contact",
+                "content": "For support or questions about these terms, contact Rezonating Apps, LLC at team@rezonating.app. Support details: https://rezonating.app/support.html."
+            }
+        ]
+    }
+}

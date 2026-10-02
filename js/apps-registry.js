@@ -12,5 +12,6 @@ const APPS = [
     "uncover",
     "mica",
     "peely",
-    "timedots"
+    "timedots",
+    "trashcam"
 ];
