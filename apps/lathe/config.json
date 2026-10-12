@@ -1,0 +1,156 @@
+{
+    "name": "Lathe",
+    "subtitle": "Your music. A vinyl ritual.",
+    "description": "Coming soon for iPhone and iPad.\n\nTurn your music library into records you can pick up, place on a 3D turntable, and play. Drop the needle, flip between Side A and Side B, and choose just how much vinyl crackle you want.\n\nPLAY YOUR MUSIC\nBrowse Apple Music, songs in your device’s Music library, and supported audio files in folders you choose. Search across your sources and open albums, songs, and playlists as records. Apple Music playback requires music permission, an eligible Apple Music subscription, and available content; your own local files do not require an Apple Music subscription.\n\nMAKE A PLACE TO LISTEN\nStart with the Studio White room and Walnut Classic deck. Decorate your wall with your photos and record sleeves, then tap a sleeve to play its record. Supported background playback, headphone controls, and Live Activities keep your music close.\n\nCREATE WITH LATHE PRO\nMusic browsing, playback, and ordinary playlists are free. Lathe Pro is a one-time purchase for saved record designs and reusable studio templates, saved smart crates, listening insights, extra rooms, and additional decks. Try studio editing and crate previews before deciding to upgrade.\n\nKEEP YOUR COLLECTION PERSONAL\nYour wall photos, designs, collections, and settings are stored on your device. Listening history is optional and off by default; it records listening observed inside Lathe, rather than your Apple Music account’s complete history.",
+    "icon": "icon.png",
+    "coverImage": "screenshots/screen1.png",
+    "appStoreUrl": "",
+    "accentColor": "#FF3B63",
+    "supportUrl": "support.html",
+    "tags": [
+        "Music",
+        "Creativity"
+    ],
+    "screenshots": [
+        "screenshots/screen1.png",
+        "screenshots/screen2.png",
+        "screenshots/screen3.png",
+        "screenshots/screen4.png",
+        "screenshots/screen5.png",
+        "screenshots/screen6.png"
+    ],
+    "features": [
+        {
+            "icon": "💿",
+            "title": "Drop the Needle",
+            "description": "Place a record on a 3D turntable, cue the tonearm, flip sides, and adjust the crackle."
+        },
+        {
+            "icon": "🎵",
+            "title": "Bring Your Music",
+            "description": "Browse Apple Music, your device’s Music library, and supported files in folders you choose."
+        },
+        {
+            "icon": "🎨",
+            "title": "Press It Your Way",
+            "description": "Try mixed, painted, and photo records. Pro saves your designs and reusable studio templates."
+        },
+        {
+            "icon": "🛋️",
+            "title": "Set the Mood",
+            "description": "Decorate your listening wall with photos and playable sleeves. Pro adds more rooms and decks."
+        },
+        {
+            "icon": "🗂️",
+            "title": "Curate Your Collection",
+            "description": "Pro saves smart crates using music metadata and offers insights from optional local listening history."
+        },
+        {
+            "icon": "🎧",
+            "title": "Keep Playing",
+            "description": "Use supported background audio, headphone and Lock Screen controls, and a record Live Activity."
+        }
+    ],
+    "privacyPolicy": {
+        "lastUpdated": "October 12, 2026",
+        "sections": [
+            {
+                "title": "Overview",
+                "content": "Lathe is provided by Rezonating Apps, LLC. This policy describes how the app handles music access, selected files and photos, record designs, listening history, purchases, and support requests. Lathe does not require a separate developer account."
+            },
+            {
+                "title": "Your Data on Your Device",
+                "content": "Lathe stores preferences, selected music-folder bookmarks, wall decorations and copied wall photos, record designs and selected design photos, reusable templates, ordinary in-app playlists, saved smart crates, and optional listening history on your device. These files are used to restore your setup, display your collection, and provide the features you choose. Lathe does not provide its own hosted music, photo, or collection synchronization service. Apple device backups may include local files and preferences according to your system settings."
+            },
+            {
+                "title": "Music Access and Apple Services",
+                "content": "With your permission, Lathe reads music-library and playlist information, song and album identifiers, titles, artists, artwork, and other metadata to browse and play your music. Apple Music browsing, catalog search, artwork retrieval, playback, and Add to Library use Apple services and your Apple account where required. These requests can transmit search terms, music identifiers, and technical network information to Apple and its content-delivery services. Choosing Add to Library changes the selected source library. Lathe does not record or export Apple Music audio into custom files, and it does not send your library or music searches to RevenueCat. Revoke music access through system Settings. Apple handles its services under its own privacy practices, described at https://www.apple.com/legal/privacy/."
+            },
+            {
+                "title": "Music Folders and Selected Photos",
+                "content": "When you choose a music folder, Lathe saves a system-supported bookmark to retain access and reads supported audio files and metadata from the selected location. A folder in iCloud Drive or another file provider can be downloaded by that provider when accessed. Remove a folder from the app to stop using that saved access; this does not delete your original audio files. Photo selection uses Apple’s photo picker for the images you choose for walls or record designs. Lathe saves local copies for those features and does not upload them to a developer server. Removing an app copy does not remove the original from Photos or a file provider."
+            },
+            {
+                "title": "Optional Listening History",
+                "content": "Listening history is off by default. If you enable it, Lathe records observed playback inside the app, including the source and record identifier, title, artist, year, listening seconds, session count, and last-played date. It is not your Apple Music account’s complete listening history and does not store audio recordings. The app keeps these observations on your device to support recent-played collections and listening insights. You can turn history off or clear it in Record Collection without buying Pro. Turning it off stops new observations; clear it separately to remove existing history. Your listening history is not sent to RevenueCat or a developer analytics server."
+            },
+            {
+                "title": "Lock Screen and Live Activities",
+                "content": "Lathe supplies now-playing information to Apple’s system playback controls and can display record, track, artist, progress, and playback state through a Live Activity on the Lock Screen or Dynamic Island. This information may be visible to someone who can see your device. Live Activities can be disabled in Lathe’s settings or system controls. Background audio and external transport controls use Apple’s system services."
+            },
+            {
+                "title": "Purchases and RevenueCat",
+                "content": "Apple processes payment for Lathe Pro. When purchases are configured, Lathe uses RevenueCat to display offers, validate purchases, restore access, and determine whether Pro is available. RevenueCat processes a generated app user identifier, purchase and entitlement records, and relevant technical app, device, and network information for these services and purchase reporting. Remote paywall presentation may also involve purchase-related interaction events. Your music library, listening history, wall photos, and record designs are not sent to RevenueCat. We do not receive full payment card details. RevenueCat’s privacy information is available at https://www.revenuecat.com/privacy, and its Apple app privacy guidance at https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy. Purchase-related processing may occur outside your country."
+            },
+            {
+                "title": "Advertising and Support",
+                "content": "The current app does not use advertising or tracking SDKs or request an advertising tracking identifier. We do not sell your personal app content or use it for targeted advertising. If you email team@rezonating.app, we receive your email address, message, and any device details or attachments you send. We use these to respond and troubleshoot. Avoid sending private photos, music files, or other sensitive content unless necessary for your request."
+            },
+            {
+                "title": "Retention and Your Controls",
+                "content": "Local preferences and creations remain until you change or remove them, clear the relevant data, or remove the app. You can remove wall items, delete record designs, remove saved crates, clear listening history, and revoke permissions without buying Pro. Removing the app does not delete music or original photos held by other apps, exported or backed-up copies, support records, or purchase records. Manage device backups with Apple’s controls. We retain support and purchase-related information as needed to provide service, resolve disputes, and meet legal obligations; some records may remain after a deletion request."
+            },
+            {
+                "title": "Privacy Requests and Security",
+                "content": "Depending on your location, you may have rights to access, correct, delete, or obtain a copy of personal information we hold, restrict or object to processing, withdraw consent where applicable, or contact your privacy authority. Email team@rezonating.app to make a request about support or identifiable purchase-related records. We may need to verify your request, and legal retention requirements can limit deletion. We cannot retrieve your local photos, designs, or listening history from your device. Lathe uses Apple’s application storage and permission mechanisms, but no storage or transmission method is guaranteed completely secure."
+            },
+            {
+                "title": "Children, Changes, and Contact",
+                "content": "Lathe does not require registration or knowingly solicit children’s personal information through an account system. Parents or guardians can contact us about information a child has sent to support. We may update this policy as the app changes and will revise the date on this page. For privacy questions, contact Rezonating Apps, LLC at team@rezonating.app. Support: https://rezonating.app/support.html."
+            }
+        ]
+    },
+    "termsAndConditions": {
+        "lastUpdated": "October 12, 2026",
+        "sections": [
+            {
+                "title": "Acceptance and Provider",
+                "content": "These Terms of Use apply to Lathe, provided by Rezonating Apps, LLC. By using the app, you agree to these terms. If you do not agree, stop using it. If you cannot legally agree on your own, a parent or guardian must authorize your use."
+            },
+            {
+                "title": "License and Apple Terms",
+                "content": "Lathe is licensed, not sold, for use on compatible Apple devices you own or control in accordance with App Store usage rules. Unless a separate custom license is supplied, Apple’s Standard End User License Agreement applies: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/. These terms do not remove rights under that agreement or applicable law."
+            },
+            {
+                "title": "Your Music and Content",
+                "content": "You retain your rights in photos, designs, and other content you create or import. You are responsible for permission to access and use audio files, artwork, photos, and other materials. Music and artwork supplied by Apple or other rights holders remain subject to their licenses. Lathe does not transfer music ownership or authorize redistribution, public performance, or copying that is otherwise restricted. Do not use the app unlawfully, infringe others’ rights, or circumvent purchase, access, or security controls."
+            },
+            {
+                "title": "Music Access and External Services",
+                "content": "Lathe’s music browsing, playback, standard controls, and ordinary playlists do not require Lathe Pro. Apple Music playback depends on your permission, Apple account, an eligible Apple Music subscription, regional availability, connectivity, and Apple’s services. An Apple Music subscription is separate from Lathe Pro and is not included in a Pro purchase. Supported local audio files can be played without an Apple Music subscription, subject to file access and device support. Lathe does not record, export, or provide unauthorized downloads of Apple Music audio. Choosing Add to Library saves selected music to the source library."
+            },
+            {
+                "title": "Lathe Pro and One-Time Purchases",
+                "content": "Lathe Pro is offered as a one-time non-consumable purchase for Lathe’s original features: saved record designs and reusable studio templates, saved smart crates, listening insights, premium rooms, and premium turntables. Studio editing and crate previews are available before purchase. The free starting room is Studio White and the free deck is Walnut Classic; room and deck names are separate choices. Prices and available features are displayed before purchase. Pro does not renew as a subscription. A lifetime unlock refers to the app’s supported lifetime and does not guarantee perpetual service, every future product, or continued availability of external music services."
+            },
+            {
+                "title": "Payments, Restoration, and Access Changes",
+                "content": "Apple charges your Apple Account under the terms shown at purchase. RevenueCat helps verify and restore eligible Pro access. Restore Purchases is available through the app; eligibility depends on the original purchase and Apple’s rules. A refund or revoked entitlement can remove Pro access. Without active Pro, the app can revert premium rooms and decks to free choices and display classic records, while music and privacy controls remain available. Refund requests are handled by Apple, subject to its policies and mandatory consumer rights. Lathe Pro and Apple Music purchases are managed separately."
+            },
+            {
+                "title": "Personal Creations and Listening Insights",
+                "content": "Record designs, wall photos, playlists, and smart crates are personal organization and presentation tools. Optional listening history covers playback observed inside Lathe and may be incomplete; it is not a certified record of all listening on your account. You can clear history and delete app-owned creations without Pro. Keep independent copies of important original files and photos. Lathe does not provide a hosted backup service and cannot recover local data after it is removed."
+            },
+            {
+                "title": "Device Support and Playback",
+                "content": "Turntable animation, audio formats, background playback, headphone controls, and Live Activities depend on device capabilities, permissions, operating-system behavior, and your settings. Playback may be interrupted by calls, other apps, connectivity changes, account changes, or unavailable content. The vinyl presentation and added crackle are optional effects and do not guarantee analog reproduction or a particular audio quality. Use reasonable listening levels and obey applicable restrictions on device use."
+            },
+            {
+                "title": "Privacy",
+                "content": "How Lathe handles permissions, music metadata, local photos, optional listening history, purchases, and support requests is described in the Privacy Policy: https://rezonating.app/privacy.html?id=lathe."
+            },
+            {
+                "title": "Availability and Liability",
+                "content": "To the extent permitted by law, Lathe is provided as available without guarantees of uninterrupted operation, perfect accuracy, or future compatibility. To the extent permitted by law, Rezonating Apps, LLC is not responsible for indirect or consequential losses, including lost creations or interrupted access to external music services. Nothing in these terms excludes liability that cannot lawfully be excluded or limits mandatory consumer rights."
+            },
+            {
+                "title": "Changes and Ending Use",
+                "content": "You may stop using Lathe at any time. Removing it does not cancel a separate Apple Music subscription or delete content held by other apps or recipients. We may revise these terms and update the date on this page; material changes will be communicated where appropriate, subject to applicable law and existing purchase terms."
+            },
+            {
+                "title": "Contact",
+                "content": "For support or questions about these terms, contact Rezonating Apps, LLC at team@rezonating.app. Support details: https://rezonating.app/support.html."
+            }
+        ]
+    }
+}
