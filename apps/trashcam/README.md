@@ -1,4 +1,4 @@
-# Trash Cam website entry
+# Temp website entry
 
 Added October 2, 2026 from the local `trashcam` Apple project.
 
