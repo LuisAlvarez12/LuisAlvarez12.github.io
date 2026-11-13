@@ -10,6 +10,11 @@
         "Books",
         "Productivity"
     ],
+    "platforms": [
+        "iphone",
+        "ipad",
+        "mac"
+    ],
     "screenshots": [
         "screenshots/screen1.jpg",
         "screenshots/screen2.jpg",

@@ -86,6 +86,7 @@
                 '<div class="sidebar-app-info">' +
                     '<span class="sidebar-app-name">' + escapeHtml(app.name) + '</span>' +
                     '<span class="sidebar-app-subtitle">' + escapeHtml(app.subtitle || '').substring(0, 60) + '</span>' +
+                    (window.Platforms ? '<span class="sidebar-app-platforms">' + window.Platforms.icons(app, 12) + '</span>' : '') +
                 '</div>' +
                 '<svg class="sidebar-app-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>' +
             '</a>';

@@ -11,6 +11,10 @@
         "Photo & Video",
         "Productivity"
     ],
+    "platforms": [
+        "iphone",
+        "ipad"
+    ],
     "screenshots": [
         "screenshots/screen1.png",
         "screenshots/screen2.png",

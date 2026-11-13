@@ -1,25 +1,33 @@
 {
     "name": "Art Reference Board: Mica",
-    "subtitle": "Collect, organize, and study visual references on an infinite canvas.",
+    "subtitle": "Collect references, study them, and design on one infinite canvas — on iPhone, iPad, Mac and Apple Vision Pro.",
     "description": "Your references should stay as close as your next brushstroke.\n\nMica is an art reference board built for illustrators, painters, animators, concept artists, character designers, tattoo artists, art students, and anyone who thinks visually. Gather images, photos, GIFs, WebP animations, video, and PDFs on a Metal-powered infinite canvas. Then study color, value, shape, pose, and motion without breaking your creative flow.\n\nBUILD THE BOARD YOUR ART NEEDS\n• Import from Photos, Files, folders, camera, document scanner, or clipboard\n• Drag and drop on iPad and Mac\n• Save references from other apps with the system share sheet\n• Send new ideas to Capture Inbox and organize them later\n• Reuse original images from your asset library across multiple boards\n\nSTUDY—DON’T JUST COLLECT\n• Generate six- or twelve-color palettes from the dominant colors in your references\n• Combine grayscale with two-, three-, four-, or six-level posterization for value studies\n• Crop, flip, rotate, resize, and adjust opacity\n• Play GIF and WebP animation, inspect timelines, and step frame by frame\n• Step precisely through video and save useful frames to your canvas\n• Run timed reference studies with interval and shuffle controls\n• Annotate, highlight, measure, and sketch with Apple Pencil\n\nKEEP REFERENCES BESIDE YOUR WORK\n• Work beside your drawing or painting app on iPad\n• Float a reference with Picture in Picture on iPhone and iPad\n• Keep an always-on-top reference window on Mac\n• Enter focus or presentation mode when you want the interface to disappear\n\nORGANIZE SERIOUS CREATIVE PROJECTS\n• Build boards with pages and layers\n• Arrange references in rows, columns, or a masonry-style grid\n• Group, lock, hide, duplicate, snap, and reorder canvas items\n• Add folders, tags, notes, sticky notes, styled text, and saved canvas regions\n• Search reusable assets by name or tag, filter by dominant color, and find boards with Spotlight\n• Keep favorites, recent work, reusable assets, and captured ideas within reach\n\nPRIVATE, PORTABLE, AND YOURS\n• Work offline by default\n• Protect private boards and folders with a passcode or supported biometrics\n• Restore an earlier local board version without overwriting your current work\n• Export pages as PNG or PDF, share selected references, or export original files\n• Move a complete project with Mica’s portable .refboard archive\n\nCollect what inspires you. Study what matters. Keep creating.",
     "icon": "icon.png",
-    "coverImage": "screenshots/screen1.jpg",
+    "coverImage": "screenshots/iphone/1.jpg",
     "appStoreUrl": "https://apps.apple.com/us/app/art-reference-board-mica/id6800322337",
     "accentColor": "#2563eb",
+    "docs": true,
     "tags": [
         "Graphics & Design",
         "Productivity"
     ],
+    "platforms": [
+        "iphone",
+        "ipad",
+        "mac",
+        "vision"
+    ],
     "screenshots": [
-        "screenshots/screen1.jpg",
-        "screenshots/screen2.jpg",
-        "screenshots/screen3.jpg",
-        "screenshots/screen4.jpg",
-        "screenshots/screen5.jpg",
-        "screenshots/screen6.jpg",
-        "screenshots/screen7.jpg",
-        "screenshots/screen8.jpg",
-        "screenshots/screen9.jpg"
+        "screenshots/iphone/1.jpg",
+        "screenshots/iphone/2.jpg",
+        "screenshots/iphone/3.jpg",
+        "screenshots/iphone/4.jpg",
+        "screenshots/iphone/5.jpg",
+        "screenshots/iphone/6.jpg",
+        "screenshots/iphone/7.jpg",
+        "screenshots/iphone/8.jpg",
+        "screenshots/iphone/9.jpg",
+        "screenshots/iphone/10.jpg"
     ],
     "features": [
         {
@@ -91,5 +99,202 @@
             }
         ]
     },
-    "supportUrl": "support.html"
+    "supportUrl": "support.html",
+    "screenshotSets": [
+        {
+            "platform": "iphone",
+            "images": [
+                "screenshots/iphone/1.jpg",
+                "screenshots/iphone/2.jpg",
+                "screenshots/iphone/3.jpg",
+                "screenshots/iphone/4.jpg",
+                "screenshots/iphone/5.jpg",
+                "screenshots/iphone/6.jpg",
+                "screenshots/iphone/7.jpg",
+                "screenshots/iphone/8.jpg",
+                "screenshots/iphone/9.jpg",
+                "screenshots/iphone/10.jpg"
+            ]
+        },
+        {
+            "platform": "ipad",
+            "images": [
+                "screenshots/ipad/1.jpg",
+                "screenshots/ipad/2.jpg",
+                "screenshots/ipad/3.jpg",
+                "screenshots/ipad/4.jpg",
+                "screenshots/ipad/5.jpg",
+                "screenshots/ipad/6.jpg",
+                "screenshots/ipad/7.jpg",
+                "screenshots/ipad/8.jpg",
+                "screenshots/ipad/9.jpg",
+                "screenshots/ipad/10.jpg"
+            ]
+        },
+        {
+            "platform": "mac",
+            "images": [
+                "screenshots/mac/1.jpg",
+                "screenshots/mac/2.jpg",
+                "screenshots/mac/3.jpg",
+                "screenshots/mac/4.jpg",
+                "screenshots/mac/5.jpg",
+                "screenshots/mac/6.jpg",
+                "screenshots/mac/7.jpg",
+                "screenshots/mac/8.jpg"
+            ]
+        },
+        {
+            "platform": "vision",
+            "images": [
+                "screenshots/vision/1.jpg",
+                "screenshots/vision/2.jpg",
+                "screenshots/vision/3.jpg",
+                "screenshots/vision/4.jpg",
+                "screenshots/vision/5.jpg",
+                "screenshots/vision/6.jpg",
+                "screenshots/vision/7.jpg",
+                "screenshots/vision/8.jpg",
+                "screenshots/vision/9.jpg",
+                "screenshots/vision/10.jpg"
+            ]
+        }
+    ],
+    "stats": [
+        {
+            "value": "4",
+            "label": "Platforms — iPhone, iPad, Mac and Apple Vision Pro"
+        },
+        {
+            "value": "87",
+            "label": "Feature guides with steps, options and best practices"
+        },
+        {
+            "value": "45",
+            "label": "MCP tools so AI agents can build boards on Mac"
+        },
+        {
+            "value": "29",
+            "label": "Languages, with on-device AI and offline boards"
+        }
+    ],
+    "highlights": [
+        {
+            "eyebrow": "Reference boards",
+            "title": "Collect references, then make art",
+            "description": "Pull images, GIFs, WebP animations, video, PDFs and SVGs onto an infinite Metal canvas. Boards hold pages and layers, so a project stays in one place instead of a folder of loose files.",
+            "bullets": [
+                "Import from Photos, Files, the camera, the scanner or the clipboard",
+                "Share from any app straight to a board page, or to Capture Inbox",
+                "Drag and drop on iPad and Mac; one original per image, reused across boards"
+            ],
+            "image": "screenshots/mac/2.jpg",
+            "device": "mac",
+            "docs": "import"
+        },
+        {
+            "eyebrow": "Design",
+            "title": "Design UI and layouts on the same canvas",
+            "description": "Frames, Super Layout, components with variants, variables with modes and prototypes sit next to your references. Build an app screen, a poster or an App Store screenshot set without switching tools.",
+            "bullets": [
+                "Super Layout: rows, columns and grid flow with Hug, Fill and min/max",
+                "Components, variants and library boards for design systems",
+                "Prototype links and clickable HTML export"
+            ],
+            "image": "screenshots/mac/1.jpg",
+            "device": "mac",
+            "docs": "super-layout"
+        },
+        {
+            "eyebrow": "Make 3D",
+            "title": "Turn any flat layer into a 3D object",
+            "description": "Make 3D extrudes or inflates a layer or group from its real outline, holes included. Pick a surface, light it, pose it and place the render on the board at the exact size you need.",
+            "bullets": [
+                "Extrude or Inflate with depth, bevel and smoothing",
+                "Materials from glossy to glass and marble, with light and shadow presets",
+                "Edit 3D reopens the render with its saved settings"
+            ],
+            "image": "screenshots/mac/4.jpg",
+            "device": "mac",
+            "docs": "make-3d"
+        },
+        {
+            "eyebrow": "Model Studio",
+            "title": "Import and render 3D models",
+            "description": "Bring in USDZ, USD, OBJ, STL and more, pose and light the model, put your screenshots on device screens, and add a full-size render to the board.",
+            "bullets": [
+                "Camera angles such as Angled Left and Isometric, lighting presets such as Studio and Golden Hour",
+                "Screen plates place images on a model’s screens without touching the bezel",
+                "Transparent or colored backgrounds and exact output sizes"
+            ],
+            "image": "screenshots/mac/7.jpg",
+            "device": "mac",
+            "docs": "model-studio"
+        },
+        {
+            "eyebrow": "Study",
+            "title": "Study color, value and motion",
+            "description": "Generate palettes from the dominant colors in a reference, check values with grayscale and posterize, and step through GIFs and video frame by frame.",
+            "bullets": [
+                "Six- or twelve-color palettes, or sample an exact area",
+                "Grayscale with 2, 3, 4 or 6 posterize levels, plus composition grids",
+                "Save video frames straight to the board"
+            ],
+            "image": "screenshots/mac/8.jpg",
+            "device": "mac",
+            "docs": "palettes"
+        },
+        {
+            "eyebrow": "On-device AI",
+            "title": "Rename layers with AI",
+            "description": "Mica names layers from what they contain, on your device, with no account or network. Use it on one layer, a whole nested tree, or with your own naming style.",
+            "bullets": [
+                "AI Nested Rename walks frames and groups",
+                "Choose a naming style that matches your team",
+                "Runs locally; nothing leaves your device"
+            ],
+            "image": "screenshots/ipad/4.jpg",
+            "device": "ipad",
+            "docs": "ai-rename"
+        },
+        {
+            "eyebrow": "Apple Pencil",
+            "title": "Draw, mark up and measure",
+            "description": "Sketch over references, circle what matters, and measure proportions with Apple Pencil, a finger or a mouse. Annotations stay on the board, separate from the originals.",
+            "bullets": [
+                "Annotate, highlight and erase over any reference",
+                "Brush tool with paint texture and brush styles",
+                "Finger panning while you draw with Pencil"
+            ],
+            "image": "screenshots/iphone/9.jpg",
+            "device": "iphone",
+            "docs": "annotate"
+        },
+        {
+            "eyebrow": "Agents",
+            "title": "Let AI agents build boards for you",
+            "description": "On Mac, Mica runs a local MCP server. Connect Claude, Cursor, Codex or any MCP client and agents can read, create, edit and export boards with the same features you use, each call one undo step.",
+            "bullets": [
+                "45 tools covering items, effects, styles, variables, components and exports",
+                "Per-permission control, board scope and an Activity log",
+                "Local only: listens on 127.0.0.1 and never sees private boards"
+            ],
+            "image": "screenshots/mac/3.jpg",
+            "device": "mac",
+            "docs": "mcp-overview"
+        },
+        {
+            "eyebrow": "Apple Vision Pro",
+            "title": "Put your boards in the room",
+            "description": "Edit boards in a spatial workspace, pin reference boards to your walls, and open 3D references in a volume beside your work.",
+            "bullets": [
+                "Boards in their own windows, two-hand transforms on the selection",
+                "Frame a room board to match the wall",
+                "Inspect references up close without borders"
+            ],
+            "image": "screenshots/vision/3.jpg",
+            "device": "vision",
+            "docs": "vision-pro"
+        }
+    ]
 }

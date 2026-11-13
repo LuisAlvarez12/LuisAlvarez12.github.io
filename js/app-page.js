@@ -71,12 +71,17 @@
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) metaDesc.content = app.subtitle || '';
 
+        const docsHref = basePath + 'docs.html?id=' + encodeURIComponent(slug);
+
         // Nav links
         const navLinks = document.getElementById('nav-links');
         if (navLinks) {
             let linksHtml = '';
             if (app.appStoreUrl) {
                 linksHtml += '<a class="nav-link" href="' + escapeHtml(app.appStoreUrl) + '" target="_blank" rel="noopener">App Store</a>';
+            }
+            if (app.docs) {
+                linksHtml += '<a class="nav-link" href="' + docsHref + '">Docs</a>';
             }
             linksHtml += '<a class="nav-link" href="' + basePath + 'terms.html?id=' + encodeURIComponent(slug) + '">Terms</a>';
             linksHtml += '<a class="nav-link" href="' + basePath + 'privacy.html?id=' + encodeURIComponent(slug) + '">Privacy</a>';
@@ -100,17 +105,43 @@
             storeLink.style.display = 'none';
         }
 
+        // Docs button beside the App Store button
+        const docsLink = document.getElementById('app-docs-link');
+        if (docsLink) {
+            if (app.docs) {
+                docsLink.href = docsHref;
+                docsLink.style.display = '';
+            }
+        }
+        const mcpLink = document.getElementById('app-mcp-link');
+        if (mcpLink && app.docs && hasMCPDocs(app)) {
+            mcpLink.href = docsHref + '#mcp-overview';
+            mcpLink.style.display = '';
+        }
+
+        // Platforms
+        const platformsEl = document.getElementById('app-platforms');
+        if (platformsEl && window.Platforms) {
+            platformsEl.innerHTML = '<span class="app-platforms-label">Available on</span>' + window.Platforms.badges(app);
+        }
+
         // Apply accent color if provided
         if (app.accentColor) {
             document.documentElement.style.setProperty('--color-accent', app.accentColor);
             document.documentElement.style.setProperty('--color-accent-glow', app.accentColor + '26');
         }
 
+        renderStats(app);
+
         // Screenshots
         renderScreenshots(app);
 
+        renderHighlights(app, docsHref);
+
         // Features
         renderFeatures(app);
+
+        renderDocsCallout(app, docsHref);
 
         // Description
         renderDescription(app);
@@ -122,28 +153,135 @@
         initScrollAnimations();
     }
 
+    function hasMCPDocs(app) {
+        return (app.highlights || []).some(function (h) { return h.docs && h.docs.indexOf('mcp-') === 0; });
+    }
+
+    function renderStats(app) {
+        const section = document.getElementById('stats-section');
+        const grid = document.getElementById('stats-grid');
+        if (!section || !app.stats || !app.stats.length) return;
+        grid.innerHTML = app.stats.map(function (s) {
+            return '<div class="stat"><dt>' + escapeHtml(s.label) + '</dt><dd>' + escapeHtml(s.value) + '</dd></div>';
+        }).join('');
+        section.hidden = false;
+    }
+
+    function fillCarousel(carousel, images, altPrefix, platform) {
+        const appBasePath = basePath + 'apps/' + slug + '/';
+        carousel.innerHTML = '';
+        carousel.setAttribute('data-platform', platform || '');
+        carousel.scrollLeft = 0;
+        images.forEach(function (src, i) {
+            const item = document.createElement('div');
+            item.className = 'screenshot-item';
+            item.innerHTML = '<img src="' + escapeHtml(appBasePath + src) + '" alt="' + escapeHtml(altPrefix) + ' screenshot ' + (i + 1) + '" loading="' + (i < 3 ? 'eager' : 'lazy') + '">';
+            carousel.appendChild(item);
+            setTimeout(function () {
+                item.classList.add('is-visible');
+            }, 120 + i * 70);
+        });
+    }
+
     function renderScreenshots(app) {
         const section = document.getElementById('screenshots-section');
         const carousel = document.getElementById('screenshots-carousel');
+        const sets = (app.screenshotSets || []).filter(function (set) { return set.images && set.images.length; });
 
-        if (!app.screenshots || app.screenshots.length === 0) {
-            section.style.display = 'none';
+        if (sets.length > 1 && window.Platforms) {
+            const tabs = document.getElementById('platform-tabs');
+            tabs.innerHTML = sets.map(function (set, i) {
+                return '<button type="button" role="tab" id="shots-tab-' + set.platform + '" aria-controls="screenshots-carousel" aria-selected="' + (i === 0) + '" tabindex="' + (i === 0 ? '0' : '-1') + '" data-index="' + i + '">' +
+                    window.Platforms.icon(set.platform, 16) + '<span>' + escapeHtml(window.Platforms.label(set.platform)) + '</span></button>';
+            }).join('');
+            tabs.hidden = false;
+            carousel.setAttribute('role', 'tabpanel');
+            const select = function (i, focus) {
+                const buttons = tabs.querySelectorAll('button');
+                buttons.forEach(function (b, j) {
+                    b.setAttribute('aria-selected', String(i === j));
+                    b.tabIndex = i === j ? 0 : -1;
+                });
+                carousel.setAttribute('aria-labelledby', buttons[i].id);
+                fillCarousel(carousel, sets[i].images, app.name + ' on ' + window.Platforms.label(sets[i].platform), sets[i].platform);
+                if (focus) buttons[i].focus();
+            };
+            tabs.addEventListener('click', function (e) {
+                const b = e.target.closest('button[data-index]');
+                if (b) select(Number(b.getAttribute('data-index')), false);
+            });
+            tabs.addEventListener('keydown', function (e) {
+                const current = Number(document.activeElement.getAttribute('data-index'));
+                if (isNaN(current)) return;
+                if (e.key === 'ArrowRight') { e.preventDefault(); select((current + 1) % sets.length, true); }
+                if (e.key === 'ArrowLeft') { e.preventDefault(); select((current - 1 + sets.length) % sets.length, true); }
+            });
+            select(0, false);
             return;
         }
 
+        const images = sets.length ? sets[0].images : (app.screenshots || []);
+        if (!images.length) {
+            section.style.display = 'none';
+            return;
+        }
+        fillCarousel(carousel, images, app.name, sets.length ? sets[0].platform : '');
+    }
+
+    function renderHighlights(app, docsHref) {
+        const section = document.getElementById('highlights-section');
+        const list = document.getElementById('highlights-list');
+        if (!section || !app.highlights || !app.highlights.length) return;
         const appBasePath = basePath + 'apps/' + slug + '/';
+        list.innerHTML = app.highlights.map(function (h, i) {
+            const platform = h.device && window.Platforms ? window.Platforms.label(h.device) : '';
+            return '<article class="highlight animate-on-scroll' + (i % 2 ? ' is-reversed' : '') + '">' +
+                '<figure class="highlight-media" data-device="' + escapeHtml(h.device || '') + '">' +
+                    '<img src="' + escapeHtml(appBasePath + h.image) + '" alt="' + escapeHtml(h.title + (platform ? ' — ' + app.name + ' on ' + platform : '')) + '" loading="lazy">' +
+                    (platform ? '<figcaption>' + window.Platforms.icon(h.device, 14) + escapeHtml(platform) + '</figcaption>' : '') +
+                '</figure>' +
+                '<div class="highlight-text">' +
+                    (h.eyebrow ? '<p class="highlight-eyebrow">' + escapeHtml(h.eyebrow) + '</p>' : '') +
+                    '<h3 class="highlight-title">' + escapeHtml(h.title) + '</h3>' +
+                    '<p class="highlight-description">' + escapeHtml(h.description) + '</p>' +
+                    (h.bullets && h.bullets.length ? '<ul class="highlight-bullets">' + h.bullets.map(function (b) { return '<li>' + escapeHtml(b) + '</li>'; }).join('') + '</ul>' : '') +
+                    (h.docs && app.docs ? '<a class="highlight-link" href="' + docsHref + '#' + encodeURIComponent(h.docs) + '">Read the guide<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>' : '') +
+                '</div>' +
+            '</article>';
+        }).join('');
+        section.hidden = false;
+    }
 
-        app.screenshots.forEach(function (src, i) {
-            const item = document.createElement('div');
-            item.className = 'screenshot-item';
-            item.innerHTML = '<img src="' + escapeHtml(appBasePath + src) + '" alt="' + escapeHtml(app.name) + ' screenshot ' + (i + 1) + '" loading="lazy">';
-            carousel.appendChild(item);
-
-            // Staggered animation
-            setTimeout(function () {
-                item.classList.add('is-visible');
-            }, 200 + i * 100);
-        });
+    async function renderDocsCallout(app, docsHref) {
+        const section = document.getElementById('docs-callout-section');
+        const grid = document.getElementById('docs-callout-grid');
+        if (!section || !app.docs) return;
+        let guides = 0, mcpPages = 0, groups = [];
+        try {
+            const res = await fetch(basePath + 'apps/' + slug + '/docs/content/en.json');
+            const content = await res.json();
+            content.groups.forEach(function (g) {
+                if (g.kind === 'markdown') { mcpPages += g.features.length; return; }
+                guides += g.features.length;
+                groups.push(g.title);
+            });
+        } catch (e) { /* counts are optional */ }
+        let html = '<a class="docs-callout" href="' + docsHref + '">' +
+            '<span class="docs-callout-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M20 17v4H6.5A2.5 2.5 0 0 1 4 18.5"/></svg></span>' +
+            '<span class="docs-callout-title">Feature guides</span>' +
+            '<span class="docs-callout-text">' + (guides ? guides + ' step-by-step guides with why, how and best practices for every feature' : 'Step-by-step guides for every feature') + '.</span>' +
+            (groups.length ? '<span class="docs-callout-meta">' + escapeHtml(groups.slice(0, 6).join(' · ')) + ' …</span>' : '') +
+            '<span class="docs-callout-cta">Open the docs →</span></a>';
+        if (mcpPages) {
+            html += '<a class="docs-callout" href="' + docsHref + '#mcp-overview">' +
+                '<span class="docs-callout-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span>' +
+                '<span class="docs-callout-title">Agents and MCP</span>' +
+                '<span class="docs-callout-text">Connect Claude, Cursor, Codex or any MCP client to Mica on Mac. Setup, permissions, recipes and the full tool reference.</span>' +
+                '<span class="docs-callout-meta">' + mcpPages + ' pages · Connect · Permissions · Workflows · Tools · Properties</span>' +
+                '<span class="docs-callout-cta">Read the MCP guide →</span></a>';
+        }
+        grid.innerHTML = html;
+        section.hidden = false;
     }
 
     function renderFeatures(app) {
@@ -197,6 +335,9 @@
         html += '<a class="footer-link" href="' + basePath + 'privacy.html?id=' + encodeURIComponent(slug) + '">Privacy Policy</a>';
         if (app.supportUrl) {
             html += '<a class="footer-link" href="' + escapeHtml(app.supportUrl) + '" target="_blank" rel="noopener">Support</a>';
+        }
+        if (app.docs) {
+            html += '<a class="footer-link" href="' + basePath + 'docs.html?id=' + encodeURIComponent(slug) + '">Docs</a>';
         }
         if (app.websiteUrl) {
             html += '<a class="footer-link" href="' + escapeHtml(app.websiteUrl) + '" target="_blank" rel="noopener">Website</a>';

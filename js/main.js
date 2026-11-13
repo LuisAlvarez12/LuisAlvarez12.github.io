@@ -111,6 +111,7 @@
                 '<img class="app-card-icon" src="' + escapeHtml(iconPath) + '" alt="' + escapeHtml(app.name) + ' icon" loading="lazy">' +
                 '<h3 class="app-card-title">' + escapeHtml(app.name) + '</h3>' +
                 '<p class="app-card-description">' + escapeHtml(app.subtitle || '') + '</p>' +
+                (window.Platforms ? '<div class="app-card-platforms">' + window.Platforms.icons(app, 17) + '</div>' : '') +
             '</div>' +
             '<div class="app-card-arrow">' +
                 '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +

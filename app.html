@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <title>App Details</title>
-    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -53,16 +54,32 @@
                 <img class="app-icon animate-fade-in" id="app-icon" src="" alt="">
                 <h1 class="app-title animate-fade-in-up" id="app-title"></h1>
                 <p class="app-subtitle animate-fade-in-up delay-1" id="app-subtitle"></p>
+                <div class="app-platforms animate-fade-in-up delay-1" id="app-platforms"></div>
                 <div class="app-actions animate-fade-in-up delay-2">
                     <a class="btn btn-primary" id="app-store-link" href="#" target="_blank" rel="noopener">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8l4 4-4 4M8 12h8"/></svg>
                         Download on the App Store
+                    </a>
+                    <a class="btn btn-secondary" id="app-docs-link" href="#" style="display: none">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M20 17v4H6.5A2.5 2.5 0 0 1 4 18.5"/></svg>
+                        How-to Docs
+                    </a>
+                    <a class="btn btn-secondary" id="app-mcp-link" href="#" style="display: none">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>
+                        MCP for Agents
                     </a>
                 </div>
             </div>
         </div>
         <div class="hero-glow"></div>
     </header>
+
+    <!-- Stats -->
+    <section class="stats-section" id="stats-section" hidden>
+        <div class="container">
+            <dl class="stats-grid" id="stats-grid"></dl>
+        </div>
+    </section>
 
     <!-- Screenshots -->
     <section class="screenshots-section" id="screenshots-section">
@@ -71,10 +88,16 @@
                 <h2 class="section-title">Screenshots</h2>
                 <div class="section-line"></div>
             </div>
+            <div class="platform-tabs" id="platform-tabs" role="tablist" aria-label="Screenshots by device" hidden></div>
             <div class="screenshots-carousel" id="screenshots-carousel">
                 <!-- Populated by JS -->
             </div>
         </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights-section" id="highlights-section" hidden>
+        <div class="container" id="highlights-list"></div>
     </section>
 
     <!-- Features -->
@@ -87,6 +110,17 @@
             <div class="features-grid" id="features-grid">
                 <!-- Populated by JS -->
             </div>
+        </div>
+    </section>
+
+    <!-- Docs callout -->
+    <section class="docs-callout-section" id="docs-callout-section" hidden>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Documentation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="docs-callout-grid" id="docs-callout-grid"></div>
         </div>
     </section>
 
@@ -116,7 +150,8 @@
     </footer>
 
     <script src="js/apps-registry.js"></script>
+    <script src="js/platforms.js"></script>
     <script src="js/sidebar.js"></script>
-    <script src="js/app-page.js"></script>
+    <script src="js/app-page.js?v=2"></script>
 </body>
 </html>

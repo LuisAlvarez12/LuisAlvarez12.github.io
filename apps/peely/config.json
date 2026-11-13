@@ -10,6 +10,10 @@
         "Photo & Video",
         "Stickers"
     ],
+    "platforms": [
+        "iphone",
+        "ipad"
+    ],
     "screenshots": [
         "screenshots/iphone-1.png",
         "screenshots/iphone-2.png",
